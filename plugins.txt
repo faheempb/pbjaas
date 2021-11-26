@@ -37,6 +37,7 @@ nodelabelparameter:latest
 Office-365-Connector:latest
 pam-auth:latest
 parameterized-scheduler:latest
+parameterized-trigger:2.42
 performance:latest
 postbuild-task:latest
 postbuildscript:latest
