@@ -39,7 +39,6 @@ scm-api: 2.6.4
 s3: 0.11.6
 ace-editor: 1.1
 ssh-credentials: 1.18.1
-maven-plugin: 3.8
 workflow-api: 2.42
 mail-watcher-plugin: 1.16
 blueocean-rest: 1.24.5
