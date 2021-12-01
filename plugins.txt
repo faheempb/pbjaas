@@ -14,7 +14,6 @@ job-dsl: 1.77
 audit-trail: 3.8
 log-parser: 2.1
 pipeline-build-step: 2.13
-token-macro: 2.13
 build-name-setter: 2.1.0
 sidebar-update-notification: 1.1.0
 publish-over-ftp: 1.16
