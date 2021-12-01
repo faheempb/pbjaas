@@ -52,7 +52,7 @@ configurationslicing
 copyartifact
 crap4j
 create-fingerprint
-credentials
+credentials: 2.5
 credentials-binding
 cucumber-reports
 dashboard-view
@@ -151,8 +151,6 @@ oauth-credentials
 okhttp-api
 openid
 openid4java
-openshift-client
-openshift-login
 ownership
 pam-auth
 parameter-separator
