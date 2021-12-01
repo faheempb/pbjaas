@@ -1,0 +1,473 @@
+Started by user [8mha:////4N+jHfi7+1cFYy/GuakImwBhoEegCE8v5YarIZwgJgdjAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZZ/dLi1CL93EQDS6OkVN3ElNzMPN3UlMwS3bLM1HIAm3lrndIAAAA=[0mMA092BE
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4OlO8xA9YYhJx/q+JQKbKWyQaS3l4xvsxTGedQ7mH+/3AAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/eT83ILSktQi/eKcxLJU3azUvOzMvGLd0qTSvJJSQzMAaMbw0dUAAAA=[0mslave-jenkins-ubuntu16 (ubuntu16) in workspace /home/admin.eng/jaas/workspace/RVP-Phase-2-ECR-Deployment
+using credential 973db7c2-250c-4e23-8d01-123a90eae1d9
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/BDA-19175^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/BDA-19175^{commit} # timeout=10
+Checking out Revision 67eaf7df6afb886d0d7c9945d06c270b3fb7e02a (refs/remotes/origin/BDA-19175)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 67eaf7df6afb886d0d7c9945d06c270b3fb7e02a # timeout=10
+Commit message: "Gitlab-CI for Docker image push"
+First time build. Skipping changelog.
+[RVP-Phase-2-ECR-Deployment] $ /bin/sh -xe /tmp/jenkins7320238676732972775.sh
++ docker build --no-cache --build-arg ACCESS_KEY_ID_VAR=**** --build-arg SECRET_ACCESS_KEY_VAR= -t return-volume-predictions-phase-2-dev:latest .
+Sending build context to Docker daemon  183.2MB
+Step 1/19 : FROM manasi/sagemaker-batch-2:latest
+latest: Pulling from manasi/sagemaker-batch-2
+9ff7e2e5f967: Pulling fs layer
+59856638ac9f: Pulling fs layer
+6f317d6d954b: Pulling fs layer
+a9dde5e2a643: Pulling fs layer
+bfcf69161bd4: Pulling fs layer
+132b5c0eb64f: Pulling fs layer
+c8a06659f338: Pulling fs layer
+322ef158bd27: Pulling fs layer
+d3e1980af1c5: Pulling fs layer
+4bf9260e6b90: Pulling fs layer
+fe29423bc79e: Pulling fs layer
+421a8b9705ff: Pulling fs layer
+f6adb50dfe43: Pulling fs layer
+e50b90ff4ec8: Pulling fs layer
+1af576283dcc: Pulling fs layer
+f5c022c980c0: Pulling fs layer
+80df172c401f: Pulling fs layer
+75ec2a4ba5d1: Pulling fs layer
+cede3e696bb6: Pulling fs layer
+cf486fb44bfe: Pulling fs layer
+1401c028c150: Pulling fs layer
+0c6591d9f1a3: Pulling fs layer
+c0c8aa15046a: Pulling fs layer
+06522b4cc50e: Pulling fs layer
+7c1008762c36: Pulling fs layer
+b0e6e822ce45: Pulling fs layer
+83ed31a525e4: Pulling fs layer
+3ef62b6f3031: Pulling fs layer
+699ddf9bd73a: Pulling fs layer
+a9dde5e2a643: Waiting
+bfcf69161bd4: Waiting
+132b5c0eb64f: Waiting
+c8a06659f338: Waiting
+322ef158bd27: Waiting
+d3e1980af1c5: Waiting
+4bf9260e6b90: Waiting
+fe29423bc79e: Waiting
+421a8b9705ff: Waiting
+f6adb50dfe43: Waiting
+e50b90ff4ec8: Waiting
+1af576283dcc: Waiting
+27ddc1e47785: Pulling fs layer
+47b87f3b0eb3: Pulling fs layer
+f5c022c980c0: Waiting
+80df172c401f: Waiting
+75ec2a4ba5d1: Waiting
+af762a2b6287: Pulling fs layer
+c3116289db16: Pulling fs layer
+9812f5e18981: Pulling fs layer
+191c46f07c07: Pulling fs layer
+ffc02f449ad4: Pulling fs layer
+1ecb42f2403d: Pulling fs layer
+0f8973adc8ee: Pulling fs layer
+6520d8766120: Pulling fs layer
+66d7d224ce1b: Pulling fs layer
+4519e6ec3871: Pulling fs layer
+ba51a1aeec60: Pulling fs layer
+1ac7223e2549: Pulling fs layer
+cede3e696bb6: Waiting
+cf486fb44bfe: Waiting
+1401c028c150: Waiting
+0c6591d9f1a3: Waiting
+c0c8aa15046a: Waiting
+06522b4cc50e: Waiting
+7c1008762c36: Waiting
+b0e6e822ce45: Waiting
+83ed31a525e4: Waiting
+3ef62b6f3031: Waiting
+699ddf9bd73a: Waiting
+27ddc1e47785: Waiting
+47b87f3b0eb3: Waiting
+af762a2b6287: Waiting
+66d7d224ce1b: Waiting
+4519e6ec3871: Waiting
+ba51a1aeec60: Waiting
+1ac7223e2549: Waiting
+c3116289db16: Waiting
+9812f5e18981: Waiting
+191c46f07c07: Waiting
+ffc02f449ad4: Waiting
+1ecb42f2403d: Waiting
+0f8973adc8ee: Waiting
+6520d8766120: Waiting
+59856638ac9f: Download complete
+6f317d6d954b: Verifying Checksum
+6f317d6d954b: Download complete
+a9dde5e2a643: Verifying Checksum
+a9dde5e2a643: Download complete
+132b5c0eb64f: Verifying Checksum
+132b5c0eb64f: Download complete
+9ff7e2e5f967: Verifying Checksum
+9ff7e2e5f967: Download complete
+322ef158bd27: Verifying Checksum
+322ef158bd27: Download complete
+d3e1980af1c5: Verifying Checksum
+d3e1980af1c5: Download complete
+bfcf69161bd4: Verifying Checksum
+bfcf69161bd4: Download complete
+4bf9260e6b90: Verifying Checksum
+4bf9260e6b90: Download complete
+421a8b9705ff: Verifying Checksum
+421a8b9705ff: Download complete
+fe29423bc79e: Verifying Checksum
+fe29423bc79e: Download complete
+f6adb50dfe43: Verifying Checksum
+f6adb50dfe43: Download complete
+e50b90ff4ec8: Verifying Checksum
+e50b90ff4ec8: Download complete
+c8a06659f338: Verifying Checksum
+c8a06659f338: Download complete
+1af576283dcc: Verifying Checksum
+1af576283dcc: Download complete
+f5c022c980c0: Verifying Checksum
+f5c022c980c0: Download complete
+75ec2a4ba5d1: Verifying Checksum
+75ec2a4ba5d1: Download complete
+cf486fb44bfe: Verifying Checksum
+cf486fb44bfe: Download complete
+1401c028c150: Verifying Checksum
+1401c028c150: Download complete
+cede3e696bb6: Verifying Checksum
+cede3e696bb6: Download complete
+0c6591d9f1a3: Verifying Checksum
+0c6591d9f1a3: Download complete
+c0c8aa15046a: Verifying Checksum
+c0c8aa15046a: Download complete
+06522b4cc50e: Verifying Checksum
+06522b4cc50e: Download complete
+7c1008762c36: Verifying Checksum
+7c1008762c36: Download complete
+b0e6e822ce45: Verifying Checksum
+b0e6e822ce45: Download complete
+80df172c401f: Verifying Checksum
+80df172c401f: Download complete
+3ef62b6f3031: Verifying Checksum
+3ef62b6f3031: Download complete
+699ddf9bd73a: Verifying Checksum
+699ddf9bd73a: Download complete
+83ed31a525e4: Verifying Checksum
+83ed31a525e4: Download complete
+9ff7e2e5f967: Pull complete
+27ddc1e47785: Verifying Checksum
+27ddc1e47785: Download complete
+59856638ac9f: Pull complete
+c3116289db16: Verifying Checksum
+c3116289db16: Download complete
+6f317d6d954b: Pull complete
+af762a2b6287: Verifying Checksum
+af762a2b6287: Download complete
+a9dde5e2a643: Pull complete
+191c46f07c07: Verifying Checksum
+191c46f07c07: Download complete
+9812f5e18981: Verifying Checksum
+9812f5e18981: Download complete
+47b87f3b0eb3: Verifying Checksum
+47b87f3b0eb3: Download complete
+1ecb42f2403d: Verifying Checksum
+1ecb42f2403d: Download complete
+ffc02f449ad4: Verifying Checksum
+ffc02f449ad4: Download complete
+6520d8766120: Verifying Checksum
+6520d8766120: Download complete
+0f8973adc8ee: Verifying Checksum
+0f8973adc8ee: Download complete
+4519e6ec3871: Verifying Checksum
+4519e6ec3871: Download complete
+66d7d224ce1b: Verifying Checksum
+66d7d224ce1b: Download complete
+ba51a1aeec60: Verifying Checksum
+ba51a1aeec60: Download complete
+1ac7223e2549: Verifying Checksum
+1ac7223e2549: Download complete
+bfcf69161bd4: Pull complete
+132b5c0eb64f: Pull complete
+c8a06659f338: Pull complete
+322ef158bd27: Pull complete
+d3e1980af1c5: Pull complete
+4bf9260e6b90: Pull complete
+fe29423bc79e: Pull complete
+421a8b9705ff: Pull complete
+f6adb50dfe43: Pull complete
+e50b90ff4ec8: Pull complete
+1af576283dcc: Pull complete
+f5c022c980c0: Pull complete
+80df172c401f: Pull complete
+75ec2a4ba5d1: Pull complete
+cede3e696bb6: Pull complete
+cf486fb44bfe: Pull complete
+1401c028c150: Pull complete
+0c6591d9f1a3: Pull complete
+c0c8aa15046a: Pull complete
+06522b4cc50e: Pull complete
+7c1008762c36: Pull complete
+b0e6e822ce45: Pull complete
+83ed31a525e4: Pull complete
+3ef62b6f3031: Pull complete
+699ddf9bd73a: Pull complete
+27ddc1e47785: Pull complete
+47b87f3b0eb3: Pull complete
+af762a2b6287: Pull complete
+c3116289db16: Pull complete
+9812f5e18981: Pull complete
+191c46f07c07: Pull complete
+ffc02f449ad4: Pull complete
+1ecb42f2403d: Pull complete
+0f8973adc8ee: Pull complete
+6520d8766120: Pull complete
+66d7d224ce1b: Pull complete
+4519e6ec3871: Pull complete
+ba51a1aeec60: Pull complete
+1ac7223e2549: Pull complete
+Digest: sha256:1573451b29819e0d63fbaa0b92837121e7d3957b92c521c8c64d99ca17d1360b
+Status: Downloaded newer image for manasi/sagemaker-batch-2:latest
+ ---> 8515b3757382
+Step 2/19 : RUN apt-get -y install dbus
+ ---> Running in 1af4b8698666
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libdbus-1-3
+Suggested packages:
+  dbus-user-session | dbus-x11
+The following packages will be upgraded:
+  dbus libdbus-1-3
+2 upgraded, 0 newly installed, 0 to remove and 58 not upgraded.
+Need to get 303 kB of archives.
+After this operation, 2048 B of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 dbus amd64 1.10.6-1ubuntu3.5 [141 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libdbus-1-3 amd64 1.10.6-1ubuntu3.5 [161 kB]
+[91mdebconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+[0m[91mdebconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+[0m[91mdpkg-preconfigure: unable to re-open stdin: 
+[0mFetched 303 kB in 1s (282 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 26087 files and directories currently installed.)
+Preparing to unpack .../dbus_1.10.6-1ubuntu3.5_amd64.deb ...
+Unpacking dbus (1.10.6-1ubuntu3.5) over (1.10.6-1ubuntu3.3) ...
+Preparing to unpack .../libdbus-1-3_1.10.6-1ubuntu3.5_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.10.6-1ubuntu3.5) over (1.10.6-1ubuntu3.3) ...
+Processing triggers for systemd (229-4ubuntu21.21) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up libdbus-1-3:amd64 (1.10.6-1ubuntu3.5) ...
+Setting up dbus (1.10.6-1ubuntu3.5) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Removing intermediate container 1af4b8698666
+ ---> 972f6ebdfd72
+Step 3/19 : ENV TZ 'America/Los_Angeles'
+ ---> Running in df9960abdb62
+Removing intermediate container df9960abdb62
+ ---> 792621858d2e
+Step 4/19 : RUN echo $TZ > /etc/timezone &&     apt-get update && apt-get install -y tzdata &&     rm /etc/localtime &&     ln -snf /usr/share/zoneinfo/$TZ /etc/localtime &&     dpkg-reconfigure -f noninteractive tzdata &&     apt-get clean
+ ---> Running in 710474070c43
+Hit:1 http://archive.ubuntu.com/ubuntu xenial InRelease
+Get:2 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+Get:3 http://ppa.launchpad.net/marutter/c2d4u/ubuntu xenial InRelease [17.5 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+Get:5 http://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/ InRelease [3625 B]
+Get:6 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [1101 kB]
+Get:7 http://ppa.launchpad.net/marutter/rrutter/ubuntu xenial InRelease [17.5 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+Get:9 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [624 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1470 kB]
+Get:11 http://ppa.launchpad.net/marutter/c2d4u/ubuntu xenial/main amd64 Packages [814 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [1029 kB]
+Get:13 http://ppa.launchpad.net/marutter/rrutter/ubuntu xenial/main amd64 Packages [9211 B]
+Fetched 5412 kB in 2s (2469 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+tzdata is already the newest version (2019c-0ubuntu0.16.04).
+tzdata set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 59 not upgraded.
+[91m
+Current default time zone: 'America/Los_Angeles'
+[0m[91mLocal time is now:      Wed May  6 23:21:23 PDT 2020.
+Universal Time is now:  Thu May  7 06:21:23 UTC 2020.
+
+[0mRemoving intermediate container 710474070c43
+ ---> ab4de06a96e1
+Step 5/19 : RUN mkdir -p /var/log/nginx
+ ---> Running in c8ba747253d5
+Removing intermediate container c8ba747253d5
+ ---> f00ba9402fb9
+Step 6/19 : ARG ACCESS_KEY_ID_VAR='default'
+ ---> Running in 76daca71f026
+Removing intermediate container 76daca71f026
+ ---> 01336485cb27
+Step 7/19 : ARG SECRET_ACCESS_KEY_VAR='default'
+ ---> Running in 1007cd15426b
+Removing intermediate container 1007cd15426b
+ ---> fe2273c08c0f
+Step 8/19 : ENV ACCESS_KEY_ID=$ACCESS_KEY_ID_VAR
+ ---> Running in e406c3626649
+Removing intermediate container e406c3626649
+ ---> 6c0aa6a34704
+Step 9/19 : ENV SECRET_ACCESS_KEY=$SECRET_ACCESS_KEY_VAR
+ ---> Running in dff0830ec9ae
+Removing intermediate container dff0830ec9ae
+ ---> b72f6cf3f464
+Step 10/19 : ENV PYTHONUNBUFFERED=TRUE
+ ---> Running in 53461e768bfc
+Removing intermediate container 53461e768bfc
+ ---> 2e9a10634f51
+Step 11/19 : ENV PYTHONDONTWRITEBYTECODE=TRUE
+ ---> Running in e9ed348b2f21
+Removing intermediate container e9ed348b2f21
+ ---> 0ac2a6f1a19e
+Step 12/19 : ENV PATH="/opt/program:${PATH}"
+ ---> Running in 6c124af1e153
+Removing intermediate container 6c124af1e153
+ ---> 09453bb26a76
+Step 13/19 : COPY dataScience/app-server-config /opt/program/
+ ---> 4fdb1a75ec55
+Step 14/19 : COPY dataScience/rScripts /opt/program/
+ ---> 0a53f94d3332
+Step 15/19 : RUN chmod +x /opt/program/predictor.py
+ ---> Running in 64ca60a7187e
+Removing intermediate container 64ca60a7187e
+ ---> 563ce2f0aadc
+Step 16/19 : RUN chmod +x /opt/program/serve
+ ---> Running in b7097758e77c
+Removing intermediate container b7097758e77c
+ ---> 46c6931e0261
+Step 17/19 : RUN chmod +x /opt/program/wsgi.py
+ ---> Running in d1b32d06ff5f
+Removing intermediate container d1b32d06ff5f
+ ---> 0647eebb15f7
+Step 18/19 : RUN chmod +x /opt/program/User_defined_errors.py
+ ---> Running in 03798c48e882
+Removing intermediate container 03798c48e882
+ ---> f5fe6f8cb2e9
+Step 19/19 : WORKDIR /opt/program
+ ---> Running in 2e4c3daa6b35
+Removing intermediate container 2e4c3daa6b35
+ ---> fed8d28e1e59
+Successfully built fed8d28e1e59
+Successfully tagged return-volume-predictions-phase-2-dev:latest
++ docker tag return-volume-predictions-phase-2-dev:latest 501442322082.dkr.ecr.us-west-2.amazonaws.com/return-volume-predictions-phase-2-dev:latest
++ docker push 501442322082.dkr.ecr.us-west-2.amazonaws.com/return-volume-predictions-phase-2-dev:latest
+The push refers to repository [501442322082.dkr.ecr.us-west-2.amazonaws.com/return-volume-predictions-phase-2-dev]
+0677413fc0e5: Preparing
+35d62178e73a: Preparing
+1a12ceec78a3: Preparing
+98ade5294d3b: Preparing
+28939ce58eed: Preparing
+22abe930f40c: Preparing
+52d1c6dcd8cf: Preparing
+7e41846cc4da: Preparing
+e7f61d1504f5: Preparing
+f06a32f2d2a9: Preparing
+e024b612bb70: Preparing
+14a7b13ef206: Preparing
+06832fe5c185: Preparing
+30e1db110f8d: Preparing
+d78fd4f37261: Preparing
+cf72e7e664a0: Preparing
+3378330101c5: Preparing
+d067abfbba6a: Preparing
+cf74350d6241: Preparing
+b81b8f7abca4: Preparing
+5fe5a2fba8d2: Preparing
+12832f4b6f17: Preparing
+b8fcfe04e728: Preparing
+e75c43f5c93a: Preparing
+33ecebaa968f: Preparing
+1d898f413346: Preparing
+f1bea7b49f6b: Preparing
+4549e7890e44: Preparing
+8b5d69b7c41a: Preparing
+c684f1d97152: Preparing
+7a2d6273eba2: Preparing
+941133357f6c: Preparing
+c312b4f57ed6: Preparing
+719f3d71fefc: Preparing
+3195cf809abf: Preparing
+22abe930f40c: Waiting
+52d1c6dcd8cf: Waiting
+7e41846cc4da: Waiting
+e7f61d1504f5: Waiting
+f06a32f2d2a9: Waiting
+e024b612bb70: Waiting
+14a7b13ef206: Waiting
+06832fe5c185: Waiting
+30e1db110f8d: Waiting
+d78fd4f37261: Waiting
+cf72e7e664a0: Waiting
+3378330101c5: Waiting
+d067abfbba6a: Waiting
+cf74350d6241: Waiting
+b81b8f7abca4: Waiting
+5fe5a2fba8d2: Waiting
+12832f4b6f17: Waiting
+b8fcfe04e728: Waiting
+e75c43f5c93a: Waiting
+33ecebaa968f: Waiting
+1d898f413346: Waiting
+f1bea7b49f6b: Waiting
+4549e7890e44: Waiting
+36011cb00928: Preparing
+6bc8daa00407: Preparing
+41e7acf3a51e: Preparing
+8b5d69b7c41a: Waiting
+93d7031294c8: Preparing
+be3976a35549: Preparing
+c684f1d97152: Waiting
+74609712250c: Preparing
+4a786ddf9af1: Preparing
+7a2d6273eba2: Waiting
+941133357f6c: Waiting
+0cd5c7fa7e4a: Preparing
+c312b4f57ed6: Waiting
+07c8cc6dd1e5: Preparing
+7e9d83bb64dc: Preparing
+719f3d71fefc: Waiting
+66bc1856c750: Preparing
+ab9f42cd01db: Preparing
+3195cf809abf: Waiting
+4c54072a5034: Preparing
+49652298c779: Preparing
+e15278fcccca: Preparing
+36011cb00928: Waiting
+739482a9723d: Preparing
+6bc8daa00407: Waiting
+41e7acf3a51e: Waiting
+93d7031294c8: Waiting
+be3976a35549: Waiting
+74609712250c: Waiting
+4a786ddf9af1: Waiting
+0cd5c7fa7e4a: Waiting
+07c8cc6dd1e5: Waiting
+7e9d83bb64dc: Waiting
+66bc1856c750: Waiting
+ab9f42cd01db: Waiting
+4c54072a5034: Waiting
+49652298c779: Waiting
+e15278fcccca: Waiting
+739482a9723d: Waiting
+no basic auth credentials
+Build step 'Execute shell' marked build as failure
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

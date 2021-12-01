@@ -1,0 +1,58 @@
+commit f381b4f6ca124e2ea1b62b71c35ae899b2d1a656
+tree e3164b896d01a1207566975aac6186b7509d4ae3
+parent d2591a871ef2509c0ec8aa2a364aee58d4bef444
+author Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-16 17:21:32 +0530
+committer Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-16 17:21:32 +0530
+
+    bugfixed
+
+
+:100644 100644 04c7111d70bb4ced9a8dca78029b0324e4b45185 50beffd93c6fde3a197f4e5375a5b29cca0dc701 M	client/src/app/reports/delivery-performance/delivery-performance.component.ts
+commit b3aed49e1fe06827708b35bf15ef4664528a3a0c
+tree b60372349546fd8f5465bef9484665bb9bcad9b1
+parent 9e4dc8751ae9205338f8fdb76edaa90a10cb4aec
+author Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-16 00:13:14 +0530
+committer Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-16 00:13:14 +0530
+
+    tooltips css bugfixed
+
+
+:100755 100755 c0afbdeb9acbdb22cadf56741f678bf0a5721182 0deca3f6225742ea069ef9ced874f78825454870 M	client/src/app/app.module.ts
+:100644 100644 bbee7d85a44627b26d6c9b762f9f4d3e8d58cd26 02ce1484884a3f8b3c27a1349d7b3b47511e5318 M	client/src/app/reports/delivery-performance/delivery-performance.component.html
+:100644 100644 4d99ef9391da0f994d729da9dc3bd66d37736928 04c7111d70bb4ced9a8dca78029b0324e4b45185 M	client/src/app/reports/delivery-performance/delivery-performance.component.ts
+:100644 100644 cdd536304c8661d58df9f0000540263b2605f2a7 6d040426b36dbb5ee0184ffef7075bb513580155 M	client/src/app/reports/reports.module.ts
+:100755 100755 245f0c7a31b0667a5faeb791c9a45216fad57824 2bcc07e731f8b263e9bc7507076c5355da117739 M	client/src/app/shared/shared.module.ts
+commit 9e4dc8751ae9205338f8fdb76edaa90a10cb4aec
+tree f76043f854ee728471d7ec46ac4f1f67382f62d5
+parent d1a84368007cca181863693499a485725003c7d4
+author Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-15 17:28:07 +0530
+committer Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-15 17:28:07 +0530
+
+    ui bugfixed and added tooltips for table header
+
+
+:100644 100644 e9934d587649a7755bc2a4d60189b33830e2a8d9 bbee7d85a44627b26d6c9b762f9f4d3e8d58cd26 M	client/src/app/reports/delivery-performance/delivery-performance.component.html
+:100644 100644 7d0ea9fd553af45561d48e828acb2523b2e416db 4d99ef9391da0f994d729da9dc3bd66d37736928 M	client/src/app/reports/delivery-performance/delivery-performance.component.ts
+:100644 100644 1edbcbc5a9657fc28c177d8ef4281ff9025ebfd1 cd2ecf5efb2fd7b9e4e815ef2dca78b0704aa542 M	client/src/app/reports/report-request/report-request.component.html
+commit 7f1b6572df2d30d1152005b7fb53f1bf41182521
+tree ed149d5326a693f57d3cfa2619fe4d719d2c08d7
+parent d1a84368007cca181863693499a485725003c7d4
+author lalit singh <lalit.mohan1@pb.com> 2020-01-14 12:16:08 +0530
+committer lalit singh <lalit.mohan1@pb.com> 2020-01-14 12:16:08 +0530
+
+    product name changes
+
+
+:100644 100644 15b6727897aa42df083351e485a5d1d6c90ff395 7b24b47c1866acec45425550536fe0fcf62fc697 M	deploy.yml
+commit eb44743bae380be3074f3548cf8db5106c256fb5
+tree 1f635ad7f25d3644516e613ed978db6ff05acae6
+parent 3e1a37a313fa653129e89b40d236f822205f9e66
+author NEX6XFE <harvendra.singh@pb.com> 2020-01-10 11:21:19 +0530
+committer NEX6XFE <harvendra.singh@pb.com> 2020-01-10 11:21:19 +0530
+
+    added origin site and date range on ui side
+
+
+:100644 100644 38cb7cef9f519b0e40eb5fb2a26f7ce1a6a395f5 e9934d587649a7755bc2a4d60189b33830e2a8d9 M	client/src/app/reports/delivery-performance/delivery-performance.component.html
+:100644 100644 cfc7b778a74b95afb9474cca9ee75cb6913c657e 7d0ea9fd553af45561d48e828acb2523b2e416db M	client/src/app/reports/delivery-performance/delivery-performance.component.ts
+:100644 100644 9757a889e91361cd65c739a56940f3aabaf02e70 c14465277f1b89eb3ac5e95401cdcedd22affe73 M	client/src/app/shared/services/delivery-performance.interface.ts

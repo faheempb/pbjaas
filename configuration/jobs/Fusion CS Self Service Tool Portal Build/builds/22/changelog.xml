@@ -1,0 +1,10 @@
+commit 1cf1d2199d7a0c8a27a0948bf02b7ae8756517b0
+tree cbba6f58086609c72207f7805b1b566d028ec9f8
+parent a6711c82f2dffa1ab3c8ab7b4a6ced4716186848
+author NEX6XFE <harvendra.singh@pb.com> 2020-02-27 12:21:43 +0530
+committer NEX6XFE <harvendra.singh@pb.com> 2020-02-27 12:21:43 +0530
+
+    dev config rouute53 changed
+
+
+:100644 100644 959f9233317775568d9200cef83a3c21f11cb9b2 b0264f6628c60122205fd1401966990433cdd3ac M	.deploy-config/dev/main.yml

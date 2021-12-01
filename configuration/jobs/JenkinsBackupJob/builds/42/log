@@ -1,0 +1,793 @@
+Started by user [8mha:////4Jhgal9UEOn2LiJLfb4htZ1mNzMO0c/dfkr8qKfOWlTJAAAAuh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzJEgZ9/dLi1CL9ssyCnPyyVL2yxOKMzOKMkoxEh4IkoBG5uokpuZl5uqkpmSW6ZZmp5QCBa7SL5AAAAA==[0mViplove.Vashishtha@pb.com
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /usr/tmp/backupjenkins
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+using credential FusionBackup
+Cloning the remote Git repository
+Cloning repository https://gitlab.pitneycloud.com/fusion-platform/fusion-jaas.git
+ > git init /usr/tmp/backupjenkins # timeout=10
+Fetching upstream changes from https://gitlab.pitneycloud.com/fusion-platform/fusion-jaas.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.18.4'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress -- https://gitlab.pitneycloud.com/fusion-platform/fusion-jaas.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://gitlab.pitneycloud.com/fusion-platform/fusion-jaas.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 559f0c628aba96040d8282c02459d16ca2c2b94d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 559f0c628aba96040d8282c02459d16ca2c2b94d # timeout=10
+Commit message: "updated backup job"
+ > git rev-list --no-walk 559f0c628aba96040d8282c02459d16ca2c2b94d # timeout=10
+No GitLab connection configured
+No emails were triggered.
+[EnvInject] - Mask passwords that will be passed as build parameters.
+
+[backupjenkins] $ /bin/sh -xe /tmp/jenkins18440144818472824781.sh
++ cp -rf /var/lib/jenkins/jobs /usr/tmp/backupjenkins/jenkins-master-config/configuration/
++ cp -rf /var/lib/jenkins/nodes /usr/tmp/backupjenkins/jenkins-master-config/configuration/
++ cp -rf /var/lib/jenkins/plugins.txt /usr/tmp/backupjenkins/jenkins-master-config/
+[backupjenkins] $ /bin/sh -xe /tmp/jenkins6332443343509976059.sh
++ cd /usr/tmp/backupjenkins/
++ git branch backupjenkins-42
++ git checkout backupjenkins-42
+Switched to branch 'backupjenkins-42'
+M	jenkins-master-config/plugins.txt
++ git add .
++ git commit -m 'Commit for backupjenkins-42'
+[backupjenkins-42 637b269] Commit for backupjenkins-42
+ 677 files changed, 56556 insertions(+), 255 deletions(-)
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/changelog5256648365966105605.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/changelog7527457907690432617.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/changelog7719835237714125491.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/changelog8699153368324301930.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/10.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/11.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/12.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/13.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/14.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/15.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/16.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/17.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/18.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/19.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/20.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/21.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/22.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/23.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/24.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/25.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/26.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/27.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/28.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/29.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/30.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/31.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/32.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/33.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/34.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/35.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/36.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/37.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/38.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/39.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/4.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/40.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/41.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/42.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/43.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/44.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/45.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/46.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/47.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/48.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/49.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/5.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/50.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/51.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/52.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/53.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/54.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/55.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/56.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/57.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/58.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/59.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/6.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/60.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/61.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/62.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/63.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/64.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/65.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/66.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/67.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/68.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/69.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/7.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/70.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/71.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/72.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/73.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/74.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/75.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/76.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/77.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/78.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/79.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/8.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/80.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/81.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/82.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/83.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/84.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/13/workflow/9.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/changelog2856548042863545555.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/changelog3187464849764698586.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/changelog3944596497560335776.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/changelog845918228129727944.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/10.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/11.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/12.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/13.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/14.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/15.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/16.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/17.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/18.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/19.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/20.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/21.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/22.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/23.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/24.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/25.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/26.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/27.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/28.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/29.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/30.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/31.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/32.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/33.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/34.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/35.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/36.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/37.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/38.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/39.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/4.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/40.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/41.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/42.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/43.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/44.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/45.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/46.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/47.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/48.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/49.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/5.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/50.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/51.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/52.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/53.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/54.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/55.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/56.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/57.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/58.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/59.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/6.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/60.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/61.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/62.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/63.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/64.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/65.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/66.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/67.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/68.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/69.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/7.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/70.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/71.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/72.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/73.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/74.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/75.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/76.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/77.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/78.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/79.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/8.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/80.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/81.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/82.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/83.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/84.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/14/workflow/9.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/changelog1243213846013598909.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/changelog2412875348397479822.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/changelog5916370266402073403.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/changelog8880309260821729361.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/10.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/11.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/12.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/13.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/14.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/15.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/16.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/17.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/18.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/19.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/20.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/21.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/22.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/23.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/24.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/25.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/26.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/27.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/28.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/29.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/30.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/31.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/32.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/33.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/34.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/35.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/36.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/37.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/38.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/39.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/4.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/40.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/41.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/42.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/43.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/44.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/45.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/46.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/47.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/48.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/49.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/5.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/50.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/51.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/52.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/53.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/54.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/55.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/56.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/57.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/58.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/59.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/6.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/60.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/61.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/62.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/63.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/64.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/65.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/66.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/67.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/68.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/69.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/7.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/70.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/71.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/72.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/73.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/74.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/75.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/76.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/77.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/78.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/79.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/8.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/80.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/81.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/82.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/83.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/84.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/85.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/15/workflow/9.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/changelog1179025247884611817.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/changelog3209597748574040186.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/changelog3840322791616422243.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/changelog4144451477690997107.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/10.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/11.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/12.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/13.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/14.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/15.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/16.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/17.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/18.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/19.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/20.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/21.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/22.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/23.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/24.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/25.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/26.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/27.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/28.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/29.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/30.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/31.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/32.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/33.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/34.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/35.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/36.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/37.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/38.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/39.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/4.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/40.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/41.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/42.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/43.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/44.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/45.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/46.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/47.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/48.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/49.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/5.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/50.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/51.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/52.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/53.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/54.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/55.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/56.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/57.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/58.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/59.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/6.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/60.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/61.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/62.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/63.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/64.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/65.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/66.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/67.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/68.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/69.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/7.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/70.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/71.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/72.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/73.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/74.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/8.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/16/workflow/9.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/changelog1341387454769094283.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/changelog240932898835752500.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/changelog3138465380169141309.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/changelog916600317345921362.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/10.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/11.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/12.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/13.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/14.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/15.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/16.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/17.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/18.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/19.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/20.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/21.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/22.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/23.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/24.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/25.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/26.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/27.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/28.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/29.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/30.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/31.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/32.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/33.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/34.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/35.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/36.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/37.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/38.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/39.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/4.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/40.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/41.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/42.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/43.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/44.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/45.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/46.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/47.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/48.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/49.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/5.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/50.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/51.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/52.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/53.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/54.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/55.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/56.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/57.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/58.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/59.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/6.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/60.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/61.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/62.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/63.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/64.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/7.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/8.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/17/workflow/9.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/legacyIds
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/builds/permalinks
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/config.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Cloudnative-terraform/nextBuildNumber
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/13/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/13/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/13/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/13/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/14/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/14/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/14/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/14/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/15/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/15/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/15/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/15/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/16/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/16/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/16/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/16/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/17/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/17/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/17/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/17/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/18/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/18/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/18/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/18/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/19/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/19/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/19/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/19/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/20/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/20/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/20/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/20/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/21/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/21/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/21/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/21/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/22/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/22/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/22/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/22/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/legacyIds
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/builds/permalinks
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/config.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/disk-usage.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Fusion CS Self Service Tool Portal Build/nextBuildNumber
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30748/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30748/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30748/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30748/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30748/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30749/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30749/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30749/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30749/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30749/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30750/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30750/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30750/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30750/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30750/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30751/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30751/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30751/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30751/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30751/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30752/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30752/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30752/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30752/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30752/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30753/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30753/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30753/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30753/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30753/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30754/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30754/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30754/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30754/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30754/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30755/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30755/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30755/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30755/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30755/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30756/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30756/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30756/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30756/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30756/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30757/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30757/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30757/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30757/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30757/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30758/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30758/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30758/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30758/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30758/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30759/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30759/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30759/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30759/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30759/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30760/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30760/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30760/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30760/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30760/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30761/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30761/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30761/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30761/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30761/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30762/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30762/log
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30762/log-index
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30762/workflow/2.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/30762/workflow/3.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/legacyIds
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/builds/permalinks
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/config.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/Idle_EMR_detection/nextBuildNumber
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/32/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/32/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/32/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/32/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/33/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/33/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/33/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/33/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/34/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/34/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/34/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/34/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/35/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/35/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/35/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/35/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/36/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/36/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/36/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/36/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/37/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/37/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/37/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/37/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/38/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/38/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/38/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/39/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/39/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/39/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/40/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/40/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/40/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/41/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/41/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/41/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/42/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/42/log
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/legacyIds
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/builds/permalinks
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/config.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/disk-usage.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/JenkinsBackupJob/nextBuildNumber
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/1/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/1/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/1/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/1/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/10/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/10/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/10/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/10/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/11/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/11/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/11/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/11/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/2/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/2/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/2/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/2/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/3/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/3/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/3/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/3/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/4/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/4/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/4/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/4/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/5/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/5/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/5/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/5/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/6/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/6/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/6/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/6/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/7/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/7/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/7/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/7/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/8/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/8/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/8/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/8/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/9/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/9/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/9/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/9/log
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/legacyIds
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/builds/permalinks
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/config.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/disk-usage.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/RVP-Phase-2-ECR-Deployment/nextBuildNumber
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/16/archive/AnchoreReport.container-scanning_16/anchore_gates.json
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/16/archive/AnchoreReport.container-scanning_16/anchore_security.json
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/16/archive/AnchoreReport.container-scanning_16/anchoreengine-api-response-evaluation-1.json
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/16/archive/AnchoreReport.container-scanning_16/anchoreengine-api-response-vulnerabilities-1.json
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/16/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/16/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/16/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/16/log
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/17/archive/AnchoreReport.container-scanning_17/anchore_gates.json
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/17/archive/AnchoreReport.container-scanning_17/anchore_security.json
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/17/archive/AnchoreReport.container-scanning_17/anchoreengine-api-response-evaluation-1.json
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/17/archive/AnchoreReport.container-scanning_17/anchoreengine-api-response-vulnerabilities-1.json
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/17/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/17/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/17/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/17/log
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/18/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/18/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/18/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/18/log
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/legacyIds
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/builds/permalinks
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/config.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/disk-usage.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/container-scanning/nextBuildNumber
+ create mode 100644 jenkins-master-config/configuration/jobs/whitesource/builds/1/build.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/whitesource/builds/1/changelog.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/whitesource/builds/1/injectedEnvVars.txt
+ create mode 100644 jenkins-master-config/configuration/jobs/whitesource/builds/1/log
+ create mode 100644 jenkins-master-config/configuration/jobs/whitesource/builds/legacyIds
+ create mode 100644 jenkins-master-config/configuration/jobs/whitesource/builds/permalinks
+ create mode 100644 jenkins-master-config/configuration/jobs/whitesource/config.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/whitesource/disk-usage.xml
+ create mode 100644 jenkins-master-config/configuration/jobs/whitesource/nextBuildNumber
+ create mode 100644 jenkins-master-config/configuration/nodes/slave-jenkins-ubuntu16/config.xml
+ rewrite jenkins-master-config/plugins.txt (100%)
++ a=10
+++ expr 42 - 10
++ RESULT=32
++ echo RESULT=32
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path 'propsfile'
+[EnvInject] - Variables injected successfully.
+The recommended git tool is: NONE
+using credential FusionBackup
+Pushing HEAD to branch backupjenkins-42 at repo origin
+ > git --version # timeout=10
+ > git --version # 'git version 2.18.4'
+using GIT_ASKPASS to set credentials 
+ > git push https://gitlab.pitneycloud.com/fusion-platform/fusion-jaas.git HEAD:backupjenkins-42 -f # timeout=10
+Performing Post build task...
+Match found for :git commit : True
+Logical operation result is TRUE
+Running script  : echo "--------------------------------------"
+echo BUILD_NUMBER:${BUILD_NUMBER}
+echo "--------------------------------------"
+echo RESULT:${RESULT}
+echo "--------------------------------------"
+echo "--------------------------------------"
+echo GITLAB_TOKEN:${GITLAB_TOKEN}
+echo "--------------------------------------"
+if [ $RESULT -gt 10 ]
+then
+curl --fail --location --request DELETE ${GITURL}/api/v4/projects/${GITREPO_ID}/repository/branches/backupjenkins-${RESULT} --header PRIVATE-TOKEN:${GITLAB_TOKEN}
+echo "--------------------------------------"
+echo "--------------------------------------"
+
+
+fi
+
+date
+[backupjenkins] $ /bin/sh -xe /tmp/jenkins11915111345308526751.sh
++ echo --------------------------------------
+--------------------------------------
++ echo BUILD_NUMBER:42
+BUILD_NUMBER:42
++ echo --------------------------------------
+--------------------------------------
++ echo RESULT:32
+RESULT:32
++ echo --------------------------------------
+--------------------------------------
++ echo --------------------------------------
+--------------------------------------
++ echo GITLAB_TOKEN:[*******]
+GITLAB_TOKEN:[*******]
++ echo --------------------------------------
+--------------------------------------
++ '[' 32 -gt 10 ']'
++ curl --fail --location --request DELETE https://gitlab.pitneycloud.com/api/v4/projects/5000/repository/branches/backupjenkins-32 --header PRIVATE-TOKEN:[*******]
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
++ echo --------------------------------------
+--------------------------------------
++ echo --------------------------------------
+--------------------------------------
++ date
+Mon Nov 22 09:20:00 UTC 2021
+POST BUILD TASK : SUCCESS
+END OF POST BUILD TASK : 0
+No GitLab connection configured
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+No emails were triggered.
+Finished: SUCCESS

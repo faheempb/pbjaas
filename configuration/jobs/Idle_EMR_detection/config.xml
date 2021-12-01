@@ -1,0 +1,73 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?><flow-definition plugin="workflow-job@2.40">
+  <actions/>
+  <description>Detecting Idle_EMR</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>15</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.19">
+      <gitLabConnection/>
+      <jobCredentialId/>
+      <useAlternativeCredential>false</useAlternativeCredential>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty plugin="ownership@0.13.0"/>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>AWS_ACCESS_KEY_ID</name>
+          <description>Platform_dev : AKIAXJQCKT2RJTE3LCMN</description>
+          <defaultValue>AKIAXJQCKT2RJTE3LCMN</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.PasswordParameterDefinition>
+          <name>AWS_SECRET_ACCESS_KEY</name>
+          <description/>
+          <defaultValue>{AQAAABAAAAAwXuWImLGQdnzV/3JpFdTmCf7ZDxufVpuufSDLUt5eDQ4kyfoukWF9v7oJFDPRh8zKaXHHt4zhWbf5LlXhWUccMw==}</defaultValue>
+        </hudson.model.PasswordParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.TimerTrigger>
+          <spec>*/20 * * * *</spec>
+        </hudson.triggers.TimerTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.90">
+    <script>pipeline {
+    agent {
+        node "ubuntu16"
+    }
+    stages {
+            stage('Checking Idle EMR for Platform Dev') {
+                agent {
+                    docker { 
+                        image 'nexus.pitneycloud.com:8443/fusion-platform/idle-emr:latest' 
+                        //label 'ubuntu16'
+                    }
+                }
+                steps {
+                      sh '''#!/bin/bash
+                         export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+                         export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+                         cd Idle_EMR
+                         chmod +x notify_long_running_emrs.sh
+                         ./notify_long_running_emrs.sh
+                        '''
+                }
+            }
+       }
+  }</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

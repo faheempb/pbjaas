@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.3">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.76">
+    <parentIds>
+      <string>46</string>
+    </parentIds>
+    <id>47</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.76">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>#!/bin/bash
+                         export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+                         export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+                         export AWS_REGION=${AWS_REGION}
+                         export TF_VAR_AWS_REGION=${AWS_REGION}
+                         export TF_VAR_ENV=${ENV}
+                         export TF_VAR_VPC_NAME=${PRODUCT_NAME}
+                         export ACCOUNT_NO=${ACCOUNT_NO}
+                         export enable_ops=${enable_ops}
+                         echo ${TF_VAR_AWS_REGION}
+                         terraform init -backend-config=&quot;bucket=${PRODUCT_NAME}-${ACCOUNT_NO}-${ENV}-terraformstate&quot; -backend-config=&quot;key=${ENV}/terraform.tfstate&quot; -backend-config=&quot;region=${AWS_REGION}&quot;
+                         terraform plan -out &quot;AWS_planfile&quot;
+                         terraform apply -input=false &quot;AWS_planfile&quot;
+                        </string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.37">
+      <startTime>1574771587116</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

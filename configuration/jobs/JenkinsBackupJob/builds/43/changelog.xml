@@ -1,0 +1,36 @@
+commit 82274c616e6affc0d768add0c446eb0370e14c4b
+tree 475e735e676357fa9aac08dc6cbdb2accadc9f33
+parent 3bb63b193646eb39599a53dc39424c6123082ec9
+author Viplove Vashishtha <viplove.vashishtha@pb.com> 2021-11-24 09:24:55 +0000
+committer Viplove Vashishtha <viplove.vashishtha@pb.com> 2021-11-24 09:24:55 +0000
+
+    Changed the Jenkins Service Name
+
+:100644 100644 097a20150ca8f8e60da043e66236d3fe47a766ba f627c43fba2d29ed247110983492ad05377133e8 M	jenkins-persistent.json
+commit 5828bef0ccf4758112735e83ba44e3f900267879
+tree de382eb6ac3165eb80ce103972a471f22b37bfad
+parent 7ad1d799ae3c76b44b1da110c955a5bfb1539c5e
+author Viplove Vashishtha <viplove.vashishtha@pb.com> 2021-11-24 08:45:57 +0000
+committer Viplove Vashishtha <viplove.vashishtha@pb.com> 2021-11-24 08:45:57 +0000
+
+    Update jenkins-persistent.json
+
+:100644 100644 f627c43fba2d29ed247110983492ad05377133e8 097a20150ca8f8e60da043e66236d3fe47a766ba M	jenkins-persistent.json
+commit 7ad1d799ae3c76b44b1da110c955a5bfb1539c5e
+tree 475e735e676357fa9aac08dc6cbdb2accadc9f33
+parent a1a0011a7406b1c3b67c48ee5e90bfcdfd76b367
+author Viplove Vashishtha <viplove.vashishtha@pb.com> 2021-11-22 09:41:28 +0000
+committer Viplove Vashishtha <viplove.vashishtha@pb.com> 2021-11-22 09:41:28 +0000
+
+    Update jenkins-persistent.json for Upgrade
+
+:100644 100644 eabcbe03a276ed654018f378c10d11892048af1b f627c43fba2d29ed247110983492ad05377133e8 M	jenkins-persistent.json
+commit a1a0011a7406b1c3b67c48ee5e90bfcdfd76b367
+tree 057e82422d19849f139e6c0f34926db137bf2ec2
+parent 72579a06d464a6a3e6adadb250f115c9cbb65883
+author Viplove Vashishtha <viplove.vashishtha@pb.com> 2021-11-22 09:38:15 +0000
+committer Viplove Vashishtha <viplove.vashishtha@pb.com> 2021-11-22 09:38:15 +0000
+
+    Update plugins.txt for Upgrade
+
+:100644 100644 2805409e99aac16c71f72250faf8eb6412ce9a92 d3ffb07fb65baf3c45c1a2271008588671a615f8 M	jenkins-master-config/plugins.txt

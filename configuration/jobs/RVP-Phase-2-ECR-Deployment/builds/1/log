@@ -1,0 +1,34 @@
+Started by user [8mha:////4N+jHfi7+1cFYy/GuakImwBhoEegCE8v5YarIZwgJgdjAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZZ/dLi1CL93EQDS6OkVN3ElNzMPN3UlMwS3bLM1HIAm3lrndIAAAA=[0mMA092BE
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4OlO8xA9YYhJx/q+JQKbKWyQaS3l4xvsxTGedQ7mH+/3AAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/eT83ILSktQi/eKcxLJU3azUvOzMvGLd0qTSvJJSQzMAaMbw0dUAAAA=[0mslave-jenkins-ubuntu16 (ubuntu16) in workspace /home/admin.eng/jaas/workspace/RVP-Phase-2-ECR-Deployment
+using credential 973db7c2-250c-4e23-8d01-123a90eae1d9
+Cloning the remote Git repository
+Cloning repository http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git
+ > git init /home/admin.eng/jaas/workspace/RVP-Phase-2-ECR-Deployment # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 91168581576b354b040579b81437d1fa4f9c8760 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 91168581576b354b040579b81437d1fa4f9c8760 # timeout=10
+Commit message: "Initial commit"
+First time build. Skipping changelog.
+[RVP-Phase-2-ECR-Deployment] $ /bin/sh -xe /tmp/jenkins7366229545302406738.sh
++ docker build --no-cache --build-arg ACCESS_KEY_ID_VAR=**** --build-arg SECRET_ACCESS_KEY_VAR= -t return-volume-predictions-phase-2-dev:latest .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/admin.eng/jaas/workspace/RVP-Phase-2-ECR-Deployment/Dockerfile: no such file or directory
+Build step 'Execute shell' marked build as failure
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

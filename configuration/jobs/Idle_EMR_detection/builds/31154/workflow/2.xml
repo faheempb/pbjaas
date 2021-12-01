@@ -1,0 +1,72 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="org.jenkinsci.plugins.workflow.graph.FlowStartNode" plugin="workflow-api@2.42">
+    <parentIds/>
+    <id>2</id>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.42">
+      <startTime>1638046801022</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.42">
+      <error class="java.lang.NoSuchMethodError">
+        <detailMessage>No such DSL method &apos;pipeline&apos; found among steps [_OcAction, _OcContextInit, _OcWatch, acceptGitLabMR, addBadge, addErrorBadge, addGitLabMRComment, addHtmlBadge, addInfoBadge, addShortText, addWarningBadge, ansiColor, archive, bat, build, catchError, checkout, compareVersions, container, containerLog, createSummary, deleteDir, dir, dockerNode, ec2, echo, emailext, emailextrecipients, error, fileExists, findBuildScans, findFiles, getContext, git, gitlabBuilds, gitlabCommitStatus, hipchatSend, input, isUnix, junit, library, libraryResource, load, lock, mail, milestone, nexusArtifactUploader, nexusPolicyEvaluation, nexusPublisher, node, nodesByLabel, parallel, podTemplate, powershell, publishChecks, publishHTML, pwd, pwsh, readCSV, readFile, readJSON, readManifest, readMavenPom, readProperties, readYaml, removeBadges, removeHtmlBadges, removeSummaries, retry, sh, sha1, slackSend, slackUploadFile, slackUserIdFromEmail, slackUserIdsFromCommitters, sleep, sshagent, stage, stash, step, svn, tee, timeout, timestamps, tm, tool, touch, unarchive, unstable, unstash, unzip, updateGitlabCommitStatus, vSphere, waitUntil, warnError, whitesource, withChecks, withContext, withCredentials, withEnv, withGradle, wrap, writeCSV, writeFile, writeJSON, writeMavenPom, writeYaml, ws, xldCreatePackage, xldDeploy, xldPublishPackage, xunit, zip] or symbols [AUnit, BoostTest, CTest, CUnit, Check, CppTest, CppUnit, Custom, FPCUnit, GoogleTest, JUnit, JsonContent, JsonContentEntry, MD5Sum, MSTest, MbUnit, NUnit2, NUnit3, PHPUnit, QtTest, RequestHeader, TextContent, TextContentEntry, URLTrigger, URLTriggerEntry, UnitTest, Valgrind, XMLContent, XMLContentEntry, abstractItemDirectoryComponent, agentDumpExportTableComponent, agentJVMProcessSystemMetricsComponent, agentSystemConfigurationComponent, agentsConfigFileComponent, all, always, anchore, anonymizeSupportBundle, ant, antFromApache, antOutcome, antTarget, apiToken, architecture, archiveArtifacts, artifact, artifactDeployer, artifactManager, artifactResolver, associateTag, attach, audit-trail, authorizationMatrix, batchFile, bitbucket, bitbucketBranchDiscovery, bitbucketForkDiscovery, bitbucketPublicRepoPullRequestFilter, bitbucketPullRequestDiscovery, bitbucketSshCheckout, bitbucketTagDiscovery, bitbucketTrustEveryone, bitbucketTrustNobody, bitbucketTrustProject, bitbucketTrustTeam, bitbucketWebhookConfiguration, bitbucketWebhookRegistration, booleanParam, brokenBuildSuspects, brokenTestsSuspects, buildButton, buildDescription, buildDiscarder, buildDiscarders, buildName, buildParameter, buildSelector, buildTimestamp, buildTimestampExtraProperties, buildUser, caseInsensitive, caseSensitive, certificate, choice, choiceParam, cleanWs, clock, command, configFile, configFileProvider, configMapVolume, containerEnvVar, containerLivenessProbe, containerTemplate, copyArtifactPermission, copyArtifacts, copyartifact, createTag, credentials, cron, crumb, cucumber, culprits, default, defaultFolderConfiguration, defaultView, deleteComponents, demand, deploy, developers, disableConcurrentBuilds, disableResume, dockerCert, dockerImageNames, dockerServer, dockerTool, dockerTriggers, downstream, dumb, durabilityHint, dynamicPVC, email-ext, embUnit, emptyDirVolume, emptyDirWorkspaceVolume, envInject, envVar, envVars, envVarsFilter, extendedEmailPublisher, failed, file, fileParam, filePath, fingerprint, fingerprints, frameOptions, freeStyle, freeStyleJob, fromDocker, fromScm, fromSource, ftpPublisher, git, gitBranchDiscovery, gitLabConnection, gitTagDiscovery, githubPush, gitlab, glassfish2, glassfish3, glassfish4, globalConfigFiles, gradle, greet, groovy, gtester, headRegexFilter, headWildcardFilter, hostPathVolume, hostPathWorkspaceVolume, hyperlink, hyperlinkToModels, inheriting, inheritingGlobal, installSource, jacoco, javadoc, jboss3, jboss4, jboss5, jboss6, jboss7, jdk, jdkInstaller, jgit, jgitapache, jnlp, jobBuildDiscarder, jobDsl, jobName, junitTestResultStorage, kubeconfig, kubernetes, lastCompleted, lastDuration, lastFailure, lastGrantedAuthorities, lastStable, lastSuccess, lastSuccessful, lastWithArtifacts, latestSavedBuild, legacy, legacySCM, list, local, location, logParser, logRotator, loggedInUsersCanDoAnything, mailer, manualApplication, masterBuild, masterJVMProcessSystemMetricsComponent, masterSystemConfigurationComponent, maven, maven3Mojos, mavenErrors, mavenMojos, mavenWarnings, merge, modernSCM, moveComponents, msbuild, msbuildError, msbuildWarning, mstest, myView, never, nfsVolume, nfsWorkspaceVolume, nodeProperties, nodeRemoteDirectoryComponent, nonInheriting, none, oc, onFailure, override, paneStatus, parameters, passed, password, pattern, permalink, permanent, persistentVolumeClaim, persistentVolumeClaimWorkspaceVolume, pipelineTriggers, plainText, plot, plugin, podAnnotation, podEnvVar, podLabel, pollSCM, portMapping, projectNamingStrategy, proxy, pruneTags, queueItemAuthenticator, quietPeriod, recipients, repository-connector, requestor, resourceRoot, retainOnlyVariables, rule, run, runDirectoryComponent, runParam, s3CopyArtifact, s3Upload, sSHLauncher, schedule, scmRetryCount, script, scriptApproval, scriptApprovalLink, search, secretEnvVar, secretVolume, security, selectedApplication, separator, shell, sidebarLinks, simpleBuildDiscarder, skipped, slackNotifier, slave, sourceRegexFilter, sourceWildcardFilter, specific, ssh, sshPublicKey, sshPublisher, sshPublisherDesc, sshTransfer, sshUserPrivateKey, standard, status, string, stringParam, swapSpace, text, textParam, threadDumpsComponent, timestamper, timestamperConfig, timezone, tmpSpace, tomcat4, tomcat5, tomcat6, tomcat7, tomcat8, tomcat9, toolLocation, unsecured, upstream, upstreamDevelopers, url, userSeed, usernameColonPassword, usernamePassword, viewsTabBar, vsTest, weather, withAnt, workspace, x509ClientCert, xUnitDotNet, zfs, zip] or globals [currentBuild, env, manager, openshift, ownership, params]</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:216)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:122)</trace>
+          <trace>jdk.internal.reflect.GeneratedMethodAccessor231.invoke(Unknown Source)</trace>
+          <trace>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+          <trace>java.base/java.lang.reflect.Method.invoke(Method.java:566)</trace>
+          <trace>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)</trace>
+          <trace>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)</trace>
+          <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)</trace>
+          <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)</trace>
+          <trace>org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:163)</trace>
+          <trace>org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)</trace>
+          <trace>org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:157)</trace>
+          <trace>org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:142)</trace>
+          <trace>org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:161)</trace>
+          <trace>org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:165)</trace>
+          <trace>com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)</trace>
+          <trace>WorkflowScript.run(WorkflowScript:1)</trace>
+          <trace>___cps.transform___(Native Method)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:86)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:113)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:83)</trace>
+          <trace>jdk.internal.reflect.GeneratedMethodAccessor230.invoke(Unknown Source)</trace>
+          <trace>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+          <trace>java.base/java.lang.reflect.Method.invoke(Method.java:566)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)</trace>
+          <trace>com.cloudbees.groovy.cps.impl.ClosureBlock.eval(ClosureBlock.java:46)</trace>
+          <trace>com.cloudbees.groovy.cps.Next.step(Next.java:83)</trace>
+          <trace>com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:174)</trace>
+          <trace>com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:163)</trace>
+          <trace>org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:129)</trace>
+          <trace>org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:268)</trace>
+          <trace>com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:163)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:18)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:51)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:185)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:400)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$400(CpsThreadGroup.java:96)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:312)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:276)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:67)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:136)</trace>
+          <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+          <trace>jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:834)</trace>
+        </stackTrace>
+        <suppressedExceptions class="empty-list"/>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

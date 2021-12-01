@@ -1,0 +1,348 @@
+Started by user [8mha:////4G6htlBDIQ5eNSXQgAbjJSsdFgaRPMuAnEu2b1US4qoSAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZZ/dLi1CL9vNQK45SsfN3ElNzMPN3UlMwS3bLM1HIAe5rC19IAAAA=[0mNEX3DJO
+Checking out git http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git into /var/lib/jenkins/jobs/Cloudnative-terraform/workspace@script to read Jenkinsfile
+using credential 973db7c2-250c-4e23-8d01-123a90eae1d9
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3fc6130f3c94658fa50baf104d4fa31e06261c29 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3fc6130f3c94658fa50baf104d4fa31e06261c29 # timeout=10
+Commit message: "Merge branch 'BDA-17603' into 'master'"
+ > git rev-list --no-walk ed2e128e0bcf18b42089c1209c8a155c975a6eda # timeout=10
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4Nl7NYikDyzZGqrZsLEYKJ5uFnBbgz1G4MqZ8rj0urbnAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4CZPZmy/tlRIVp/ppkbClK9XxSszZw8zLjeU/7pzcByvAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4Kwa5Vx7zYuUESJtpCgaJPknWItVIMRsUqKjPsQNZe1UAAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgZF/eT83ILSktQi/eKcxLJU3azUvOzMvGLd0qTSvJJSQzN9AE6a6R7WAAAA[0mslave-jenkins-ubuntu16 in /home/admin.eng/jaas/workspace/Cloudnative-terraform
+[8mha:////4A7kBSjR4YMmDajMzFYPcyqRUNJ6vXG84TRltDLx7zbfAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4PEDGlRimnwAsNl4W8gyqmxbDdsFTQV8ej4+U6mSzOEcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4GfFQkyUmfHOCZB/M43b/u+HzhWESCAxieMAXsjOPHkwAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4IebgIfHGtJLNX/Ji9BJ15fw3BDt58uszbdH0GDjaAoKAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+using credential 973db7c2-250c-4e23-8d01-123a90eae1d9
+Fetching changes from the remote Git repository
+ > git rev-parse --is-inside-work-tree # timeout=10
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 3fc6130f3c94658fa50baf104d4fa31e06261c29 (refs/remotes/origin/master)
+Commit message: "Merge branch 'BDA-17603' into 'master'"
+[8mha:////4HGRyQhSfFK+y3WY0UY5bgT/moORvT8QJG1biX7RunZ0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4JOD7fsDVTzV7noZ9TfYFGDJcutnxHxOxLIg2H2WiPwYAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4FwaWDdBKn64zhqfC+cUbF6sjXZHpnCvAmyIgutj/D8fAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4HBNEJ3le/MC8n3i+OCvg+n9NiVh/fUG5PfMit5cO9bjAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4H5cfKdJijGuRDbo56yQ3IoNtqabwYA3pU6xh67MqAOZAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] withEnv
+[8mha:////4IqEzo+cf+/S9le+6QGJCDUIhd128u25xRoOO3+FytTyAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4Nlr+N37a9zg+uJAosP+VL9U1tpOyd4/vWHm00zmnhuoAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] stage
+[8mha:////4JH+MnxtzUsIadFRyRLXKQePabCElQT9NjP+RtFACCU3AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (AWS Remote State Creation)
+[8mha:////4E08EycJTwUAj6jB/Z91RvkAzXioBURmVr+U53fhdgHHAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] node
+Running on [8mha:////4Kwa5Vx7zYuUESJtpCgaJPknWItVIMRsUqKjPsQNZe1UAAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgZF/eT83ILSktQi/eKcxLJU3azUvOzMvGLd0qTSvJJSQzN9AE6a6R7WAAAA[0mslave-jenkins-ubuntu16 in /home/admin.eng/jaas/workspace/Cloudnative-terraform@2
+[8mha:////4P+0moIA+kVCQFRMkR8LLzbjPcTIvHvtN3gvB3DdqiEcAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] {
+[8mha:////4FHVp22I1dYzlf8BiqT1/qGPKelPzlOVGsKsdRdpgbfDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNxXfVKy+AAAA[0m[Pipeline] checkout
+using credential 973db7c2-250c-4e23-8d01-123a90eae1d9
+Fetching changes from the remote Git repository
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3fc6130f3c94658fa50baf104d4fa31e06261c29 # timeout=10
+ > git rev-parse --is-inside-work-tree # timeout=10
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 3fc6130f3c94658fa50baf104d4fa31e06261c29 (refs/remotes/origin/master)
+Commit message: "Merge branch 'BDA-17603' into 'master'"
+[8mha:////4MWTn8D+8kSUdrFOgtm9/1K7LJ6R9oyqis7PwS5yiduHAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTAghpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+822BnCAAAA[0m[Pipeline] withEnv
+[8mha:////4MxtEmaQELmA8QFVpX47s5h1XHbT/NocbbiSfGC6Ff2VAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] {
+[8mha:////4FA/vsVtWvPz1UO0a0lNodwnBvuFcgD1RnChkBfwJzFtAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQo99tP7cIbaOP4NL4AAAA=[0m[Pipeline] isUnix
+[8mha:////4KB/uRDNnAp6jvjdk7zGpbftqfaqlmWn7J3QJcLQeVSeAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKC0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJp+grPefqv0bq7DVH74AAAA=[0m[Pipeline] sh
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3fc6130f3c94658fa50baf104d4fa31e06261c29 # timeout=10
++ docker inspect -f . pitneyboweshub/cloud_native:latest
+.
+[8mha:////4GEm0r6dpCvTwSMqSBPX61AiKFHzfdyQwP9uAMJoBmcBAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfL9brbD/Cw+Z8gO18IAAAA=[0m[Pipeline] withDockerContainer
+slave-jenkins-ubuntu16 does not seem to be running inside a container
+$ docker run -t -d -u 1001:1002 -w /home/admin.eng/jaas/workspace/Cloudnative-terraform@2 -v /home/admin.eng/jaas/workspace/Cloudnative-terraform@2:/home/admin.eng/jaas/workspace/Cloudnative-terraform@2:rw,z -v /home/admin.eng/jaas/workspace/Cloudnative-terraform@2@tmp:/home/admin.eng/jaas/workspace/Cloudnative-terraform@2@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** pitneyboweshub/cloud_native:latest cat
+$ docker top 8a17379bda06bb0d4006cc78c1d88f9c117f0b7ec971b56826702d64bcd5f771 -eo pid,comm
+[8mha:////4BLj1mujCL1MuOtCT+v0gL9fWsmkyHnpXjDJEkyQh3PMAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] {
+[8mha:////4HcC3OAKIt8QDEIgBrjVwDpV5/Wu+PJn0dChq10MuqchAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN38C26S+AAAA[0m[Pipeline] sh
+ops remote state exist
+fusion bucket exist
+ops VPC already exist
+[8mha:////4LbZ27vLDEkVP2PB7x+S7pnXN+gMavluI6n1HA7PfRoXAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQHjyRvdvgAAAA==[0m[Pipeline] }
+$ docker stop --time=1 8a17379bda06bb0d4006cc78c1d88f9c117f0b7ec971b56826702d64bcd5f771
+$ docker rm -f 8a17379bda06bb0d4006cc78c1d88f9c117f0b7ec971b56826702d64bcd5f771
+[8mha:////4BU6eQBlqbDYFmpYK+4Ag+nsJFMexOS4ZwTRkAEiSb14AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQUGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQHljyOIvgAAAA==[0m[Pipeline] // withDockerContainer
+[8mha:////4AndTJ/SeoSIwMoW47ipgvywzqyRnwTS7wBZh+/buSw8AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCqJAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN4psfOC+AAAA[0m[Pipeline] }
+[8mha:////4CwxJhL6+1Zd+wPOnX+RGHF5JJU1pYAFrUlTZNyBBExCAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi6CJEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP0hU0Xm+AAAA[0m[Pipeline] // withEnv
+[8mha:////4Eab8iBrVBFglmsTBmZqW7JF0C88IJYEU1z4dAAsdt0kAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICoqBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw8zIxEfvgAAAA==[0m[Pipeline] }
+[8mha:////4NF6kPtY3gdFfHQ5Iq/a9slZUYCmRkI0Wr8YjwSf1aT1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCIkGUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw8AwEqjvgAAAA==[0m[Pipeline] // node
+[8mha:////4LkNyjbJq1jf0x7RKdWlD5K/yvj/QF4dciEjbN/vPS7dAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ltf28AEU49e8vgAAAA==[0m[Pipeline] }
+[8mha:////4PgI4pFcAXe83CDxy0owq6ImnmiPyjHzfPIF42iYyK+LAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRCh2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPicAjAC+AAAA[0m[Pipeline] // stage
+[8mha:////4Fs5MUoQX0qYmX8QC2jT3tr9vtAYGe3YL6pVR1rvlO/rAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUqGyIqWuUhROEJIS00f8lSWknTsTVuAOBSkx4sGxL1nu+oIoBjhQs6wz2DqNybPCjzYlNFPqLp4l1dGaKMJI3TJhJkDbtUgUlA4uKElYc1gaVp+jQJtjwTt5l7SXa+pRC3g4cSqdv8ICCZ3KSIX3LHGB7HXUk/HH+AmAeEpS7Jluz/zyrN5pHAILCAAAA[0m[Pipeline] stage
+[8mha:////4JO6GRznnYJ0Z9MEHkpDlzNJe3MmGFXEPZ3yrqu46JDdAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASMfXIzCAAAA[0m[Pipeline] { (AWS Deployment)
+[8mha:////4OBEJF4A2v/xgqVt2FNuRczy+1/Swr+lsRV4C5cwfJpQAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD02yRsvCAAAA[0m[Pipeline] node
+Running on [8mha:////4Kwa5Vx7zYuUESJtpCgaJPknWItVIMRsUqKjPsQNZe1UAAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgZF/eT83ILSktQi/eKcxLJU3azUvOzMvGLd0qTSvJJSQzN9AE6a6R7WAAAA[0mslave-jenkins-ubuntu16 in /home/admin.eng/jaas/workspace/Cloudnative-terraform@2
+[8mha:////4AcqIVs9ePUq31TcNz8Pp7zkUx5YwPSutULohINpsWQ+AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] {
+[8mha:////4LtMkICVgLU6+zQLjTDVb32tgMJQQGZ055llTISSn3QJAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEGDPXtvgAAAA==[0m[Pipeline] checkout
+using credential 973db7c2-250c-4e23-8d01-123a90eae1d9
+Fetching changes from the remote Git repository
+Checking out Revision 3fc6130f3c94658fa50baf104d4fa31e06261c29 (refs/remotes/origin/master)
+Commit message: "Merge branch 'BDA-17603' into 'master'"
+[8mha:////4LA4KsLFPd0OZ6k5XrIlk91uw+P0fU1j1M1OOQzlMIWNAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YEAIMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfABZuXxiwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4Ncz7jeUHjfla5l168jNj8WxzGa/nvYPTDhXHHl3wJgJAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] {
+[8mha:////4CUyL+8UGymn3BrXRTQqc/DNc3ZXoSBQPMTE3eii7WIuAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBl2WGva+AAAA[0m[Pipeline] isUnix
+[8mha:////4B3/uj1upoRZs8E/oDfgq+FZLEp/vlD6LVU2M0C7QRzMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBp7FN92+AAAA[0m[Pipeline] sh
+ > git rev-parse --is-inside-work-tree # timeout=10
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/infra-setup-terraform.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3fc6130f3c94658fa50baf104d4fa31e06261c29 # timeout=10
++ docker inspect -f . pitneyboweshub/cloud_native:latest
+.
+[8mha:////4Iocc49X8A4xqYdhjsloMILcVWcQBq5YA+yBy2PHFrsYAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCTbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAb1Y41vCAAAA[0m[Pipeline] withDockerContainer
+slave-jenkins-ubuntu16 does not seem to be running inside a container
+$ docker run -t -d -u 1001:1002 -w /home/admin.eng/jaas/workspace/Cloudnative-terraform@2 -v /home/admin.eng/jaas/workspace/Cloudnative-terraform@2:/home/admin.eng/jaas/workspace/Cloudnative-terraform@2:rw,z -v /home/admin.eng/jaas/workspace/Cloudnative-terraform@2@tmp:/home/admin.eng/jaas/workspace/Cloudnative-terraform@2@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** pitneyboweshub/cloud_native:latest cat
+$ docker top 9e1b24a69cc4ffd12ad85c48f3b953f5ceb6a6bba4c383a82184fb6872c4298b -eo pid,comm
+[8mha:////4AdpoqFrWUt6HXXtIuFGRAxEEjboWp87Cd/TFxb9fXgvAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0oBtiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPBA4E38IAAAA=[0m[Pipeline] {
+[8mha:////4Mnx77axaDFoEEEfUMFGKY7711Q8nAzUm/XHm75ZzF+/AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KRNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPIshjPcIAAAA=[0m[Pipeline] dir
+Running in /home/admin.eng/jaas/workspace/Cloudnative-terraform@2/template/AWS/${ENV}
+[8mha:////4EF9MVuUA3cG6o4Ix09kAltSgpBKIJHn+pCqONP0o4VlAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] {
+[8mha:////4A774vgqXl4oLc32qMyFwKBzhXeMIIajF0cJxH7V5jrzAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSICgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN+EEkMO+AAAA[0m[Pipeline] sh
+us-east-2
+[0m[1mInitializing modules...[0m
+
+[0m[1mInitializing the backend...[0m
+
+[0m[1mInitializing provider plugins...[0m
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.aws: version = "~> 2.39"
+
+[0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+[0m[32m
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.[0m
+[0m[1mRefreshing Terraform state in-memory prior to plan...[0m
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+[0m
+[0m[1mmodule.main-vpc.aws_eip.nat-eip-2: Refreshing state... [id=eipalloc-0fda9ffdc4cae41f1][0m
+[0m[1mmodule.main-vpc.aws_eip.nat-eip-1: Refreshing state... [id=eipalloc-00ac58621378581a9][0m
+[0m[1mmodule.main-vpc.aws_vpc.main-vpc: Refreshing state... [id=vpc-039d3f1b45b8c142b][0m
+[0m[1mmodule.main-vpc.data.aws_ami.amazon_linux: Refreshing state...[0m
+[0m[1mmodule.main-vpc.data.aws_caller_identity.current: Refreshing state...[0m
+[0m[1mmodule.main-vpc.data.terraform_remote_state.ops-infra: Refreshing state...[0m
+[0m[1mmodule.main-vpc.aws_subnet.public-subnet-1: Refreshing state... [id=subnet-06ecd42ed5ea04b52][0m
+[0m[1mmodule.main-vpc.aws_subnet.private-subnet-1: Refreshing state... [id=subnet-034e1dcbe60a1f7ec][0m
+[0m[1mmodule.main-vpc.aws_subnet.private-subnet-2: Refreshing state... [id=subnet-009e3bd247bd36ab5][0m
+[0m[1mmodule.main-vpc.aws_subnet.public-subnet-2: Refreshing state... [id=subnet-0d92a559bb3ade2d1][0m
+[0m[1mmodule.main-vpc.aws_internet_gateway.main-gw: Refreshing state... [id=igw-0b40659cf6a853b2f][0m
+[0m[1mmodule.main-vpc.aws_nat_gateway.nat-gw-1: Refreshing state... [id=nat-00f7136aa57f0cfd3][0m
+[0m[1mmodule.main-vpc.aws_route_table.main-public: Refreshing state... [id=rtb-0e881295622cf3c73][0m
+[0m[1mmodule.main-vpc.aws_nat_gateway.nat-gw-2: Refreshing state... [id=nat-08d67401ec4b6f2c9][0m
+[0m[1mmodule.main-vpc.aws_route_table_association.main-public-2-a: Refreshing state... [id=rtbassoc-06a8e44017ed75c30][0m
+[0m[1mmodule.main-vpc.aws_route_table_association.main-public-route-1: Refreshing state... [id=rtbassoc-0eb3eeab206efbb23][0m
+[0m[1mmodule.main-vpc.aws_route_table.main-private-1: Refreshing state... [id=rtb-06cb541d7b68909a8][0m
+[0m[1mmodule.main-vpc.aws_route_table.main-private-2: Refreshing state... [id=rtb-09207be0c2a3678fe][0m
+[0m[1mmodule.main-vpc.aws_route_table_association.main-private-1: Refreshing state... [id=rtbassoc-00c121b4c901f30f3][0m
+[0m[1mmodule.main-vpc.aws_route_table_association.main-private-2: Refreshing state... [id=rtbassoc-0e0ee544e195feef2][0m
+[0m[1mmodule.main-vpc.aws_vpc_peering_connection.peering[0]: Refreshing state... [id=pcx-048ed6f40862372ca][0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing2-pub2[0]: Refreshing state... [id=r-rtb-0e881295622cf3c732186379774][0m
+[0m[1mmodule.main-vpc.aws_route.vpc-routing1-pri1[0]: Refreshing state... [id=r-rtb-06cb541d7b68909a880081744][0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing2-pri2[0]: Refreshing state... [id=r-rtb-09207be0c2a3678fe2186379774][0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing-pri1[0]: Refreshing state... [id=r-rtb-0d5a2f357a221981c4159751689][0m
+[0m[1mmodule.main-vpc.aws_route.vpc-routing1-pri2[0]: Refreshing state... [id=r-rtb-09207be0c2a3678fe80081744][0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing2-pri1[0]: Refreshing state... [id=r-rtb-06cb541d7b68909a82186379774][0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing-pri2[0]: Refreshing state... [id=r-rtb-0d5a2f357a221981c3455756153][0m
+[0m[1mmodule.main-vpc.aws_route.vpc-routing1-pub1[0]: Refreshing state... [id=r-rtb-0e881295622cf3c7380081744][0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing-pub2[0]: Refreshing state... [id=r-rtb-0d5a2f357a221981c111572188][0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing-pub1[0]: Refreshing state... [id=r-rtb-0d5a2f357a221981c1017910700][0m
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  [32m+[0m create
+[0m
+Terraform will perform the following actions:
+
+[1m  # module.main-vpc.aws_route.ops-routing2-pri1[0][0m will be created[0m[0m
+[0m[32m  +[0m [0mresource "aws_route" "ops-routing2-pri1" {
+      [32m+[0m [0m[1m[0mdestination_cidr_block[0m[0m     = "10.0.2.0/24"
+      [32m+[0m [0m[1m[0mdestination_prefix_list_id[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0megress_only_gateway_id[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mgateway_id[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                         = (known after apply)
+      [32m+[0m [0m[1m[0minstance_id[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0minstance_owner_id[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mnat_gateway_id[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m       = (known after apply)
+      [32m+[0m [0m[1m[0morigin[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mroute_table_id[0m[0m             = "rtb-06cb541d7b68909a8"
+      [32m+[0m [0m[1m[0mstate[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mvpc_peering_connection_id[0m[0m  = "pcx-048ed6f40862372ca"
+    }
+
+[1m  # module.main-vpc.aws_route.ops-routing2-pri2[0][0m will be created[0m[0m
+[0m[32m  +[0m [0mresource "aws_route" "ops-routing2-pri2" {
+      [32m+[0m [0m[1m[0mdestination_cidr_block[0m[0m     = "10.0.2.0/24"
+      [32m+[0m [0m[1m[0mdestination_prefix_list_id[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0megress_only_gateway_id[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mgateway_id[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                         = (known after apply)
+      [32m+[0m [0m[1m[0minstance_id[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0minstance_owner_id[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mnat_gateway_id[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m       = (known after apply)
+      [32m+[0m [0m[1m[0morigin[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mroute_table_id[0m[0m             = "rtb-09207be0c2a3678fe"
+      [32m+[0m [0m[1m[0mstate[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mvpc_peering_connection_id[0m[0m  = "pcx-048ed6f40862372ca"
+    }
+
+[1m  # module.main-vpc.aws_route.ops-routing2-pub2[0][0m will be created[0m[0m
+[0m[32m  +[0m [0mresource "aws_route" "ops-routing2-pub2" {
+      [32m+[0m [0m[1m[0mdestination_cidr_block[0m[0m     = "10.0.2.0/24"
+      [32m+[0m [0m[1m[0mdestination_prefix_list_id[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0megress_only_gateway_id[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mgateway_id[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                         = (known after apply)
+      [32m+[0m [0m[1m[0minstance_id[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0minstance_owner_id[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mnat_gateway_id[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m       = (known after apply)
+      [32m+[0m [0m[1m[0morigin[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mroute_table_id[0m[0m             = "rtb-0e881295622cf3c73"
+      [32m+[0m [0m[1m[0mstate[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mvpc_peering_connection_id[0m[0m  = "pcx-048ed6f40862372ca"
+    }
+
+[1m  # module.main-vpc.aws_route.vpc-routing1-pri1[0][0m will be created[0m[0m
+[0m[32m  +[0m [0mresource "aws_route" "vpc-routing1-pri1" {
+      [32m+[0m [0m[1m[0mdestination_cidr_block[0m[0m     = "10.0.1.0/24"
+      [32m+[0m [0m[1m[0mdestination_prefix_list_id[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0megress_only_gateway_id[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mgateway_id[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                         = (known after apply)
+      [32m+[0m [0m[1m[0minstance_id[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0minstance_owner_id[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mnat_gateway_id[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m       = (known after apply)
+      [32m+[0m [0m[1m[0morigin[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mroute_table_id[0m[0m             = "rtb-06cb541d7b68909a8"
+      [32m+[0m [0m[1m[0mstate[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mvpc_peering_connection_id[0m[0m  = "pcx-048ed6f40862372ca"
+    }
+
+[1m  # module.main-vpc.aws_route.vpc-routing1-pri2[0][0m will be created[0m[0m
+[0m[32m  +[0m [0mresource "aws_route" "vpc-routing1-pri2" {
+      [32m+[0m [0m[1m[0mdestination_cidr_block[0m[0m     = "10.0.1.0/24"
+      [32m+[0m [0m[1m[0mdestination_prefix_list_id[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0megress_only_gateway_id[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mgateway_id[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                         = (known after apply)
+      [32m+[0m [0m[1m[0minstance_id[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0minstance_owner_id[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mnat_gateway_id[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m       = (known after apply)
+      [32m+[0m [0m[1m[0morigin[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mroute_table_id[0m[0m             = "rtb-09207be0c2a3678fe"
+      [32m+[0m [0m[1m[0mstate[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mvpc_peering_connection_id[0m[0m  = "pcx-048ed6f40862372ca"
+    }
+
+[1m  # module.main-vpc.aws_route.vpc-routing1-pub1[0][0m will be created[0m[0m
+[0m[32m  +[0m [0mresource "aws_route" "vpc-routing1-pub1" {
+      [32m+[0m [0m[1m[0mdestination_cidr_block[0m[0m     = "10.0.1.0/24"
+      [32m+[0m [0m[1m[0mdestination_prefix_list_id[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0megress_only_gateway_id[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mgateway_id[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                         = (known after apply)
+      [32m+[0m [0m[1m[0minstance_id[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0minstance_owner_id[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mnat_gateway_id[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m       = (known after apply)
+      [32m+[0m [0m[1m[0morigin[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mroute_table_id[0m[0m             = "rtb-0e881295622cf3c73"
+      [32m+[0m [0m[1m[0mstate[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mvpc_peering_connection_id[0m[0m  = "pcx-048ed6f40862372ca"
+    }
+
+[0m[1mPlan:[0m 6 to add, 0 to change, 0 to destroy.[0m
+
+------------------------------------------------------------------------
+
+This plan was saved to: AWS_planfile
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "AWS_planfile"
+
+[0m[1mmodule.main-vpc.aws_route.vpc-routing1-pub1[0]: Creating...[0m[0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing2-pri2[0]: Creating...[0m[0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing2-pub2[0]: Creating...[0m[0m
+[0m[1mmodule.main-vpc.aws_route.vpc-routing1-pri1[0]: Creating...[0m[0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing2-pri1[0]: Creating...[0m[0m
+[0m[1mmodule.main-vpc.aws_route.vpc-routing1-pri2[0]: Creating...[0m[0m
+[0m[1mmodule.main-vpc.aws_route.vpc-routing1-pub1[0]: Creation complete after 0s [id=r-rtb-0e881295622cf3c7380081744][0m[0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing2-pri2[0]: Creation complete after 0s [id=r-rtb-09207be0c2a3678fe2186379774][0m[0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing2-pri1[0]: Creation complete after 0s [id=r-rtb-06cb541d7b68909a82186379774][0m[0m
+[0m[1mmodule.main-vpc.aws_route.ops-routing2-pub2[0]: Creation complete after 0s [id=r-rtb-0e881295622cf3c732186379774][0m[0m
+[0m[1mmodule.main-vpc.aws_route.vpc-routing1-pri2[0]: Creation complete after 0s [id=r-rtb-09207be0c2a3678fe80081744][0m[0m
+[0m[1mmodule.main-vpc.aws_route.vpc-routing1-pri1[0]: Creation complete after 0s [id=r-rtb-06cb541d7b68909a880081744][0m[0m
+[0m[1m[32m
+Apply complete! Resources: 6 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+private_subnets-1 = subnet-034e1dcbe60a1f7ec
+private_subnets-2 = subnet-009e3bd247bd36ab5
+public_subnets-1 = subnet-06ecd42ed5ea04b52
+public_subnets-2 = subnet-0d92a559bb3ade2d1
+vpc_id = vpc-039d3f1b45b8c142b[0m
+[8mha:////4AgiFoFLKFXJzCI3VZ3cgtU+F0LL3jyO7LgvRaMxmmmVAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIISEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEDW5U8vgAAAA==[0m[Pipeline] }
+[8mha:////4EOAaW4kL3aDG2o3bNHrRGb6xzZK4QXlV8wb1nGIAyaFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSQIEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7NxzZwG6+AAAA[0m[Pipeline] // dir
+[8mha:////4HD6iuYqpF8TcCkK+O3FofDX5m9R94RooFINNnByOO2BAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKhCBWiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BOVhn6uuP/azv5i+AAAA[0m[Pipeline] }
+$ docker stop --time=1 9e1b24a69cc4ffd12ad85c48f3b953f5ceb6a6bba4c383a82184fb6872c4298b
+$ docker rm -f 9e1b24a69cc4ffd12ad85c48f3b953f5ceb6a6bba4c383a82184fb6872c4298b
+[8mha:////4P4V1AvfB86hTiTr9Z0MZinJjQqQubC5Ju0tVUZVVBpjAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtd+9wHw9YfNvgAAAA==[0m[Pipeline] // withDockerContainer
+[8mha:////4BinQBLzmkqgZiB21uGlzQn2YzAWfqDCKvBhYzEGRcihAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDLtd++wHk1hrSvgAAAA==[0m[Pipeline] }
+[8mha:////4Pz3ShF3/pCBizZreP7eRRJMBiBarIJ5hqkH02+vkOCaAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSRBQIUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw8iK9svvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4NHYV2C6vhHJMGASAwHqm5bONLEprrvrK+L3uOHqolf4AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAKJAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDud7m2hw+dNmbVvgAAAA==[0m[Pipeline] }
+[8mha:////4OGl7S9Jij/MqFSYoA4jTxoitlUdjgu9CJJ5vFZHyKZvAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpUGgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AGu1T1pvgAAAA==[0m[Pipeline] // node
+[8mha:////4IiXtyR9BpWDJCAGykSJ4Oxj8dzHziPIxtkW2EZ1y9kxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpUGgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrQ659/QG69qB2vgAAAA==[0m[Pipeline] }
+[8mha:////4D4T8o+j349akcvbcZKWwj1yXejeUGP2WbUxqlpAoTZhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAKJAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7m2uw+JFfvKvgAAAA==[0m[Pipeline] // stage
+[8mha:////4NRzH9/M2hUKkJl4m6bQX+p3Ha7/yNtxroFZ2BMDvcdFAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+0Ou7e4DfVD/l74AAAA=[0m[Pipeline] }
+[8mha:////4HWK6SoWOaSH4P4wW9OorF7NIy9MS6yUok1k++YlL814AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikCgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryf8i13X0ATrOkK74AAAA=[0m[Pipeline] // withEnv
+[8mha:////4PM4kMqbaw/UvgIRMihCea1pS9MX++xMZZcLl3o4KRkSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIhDQ2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BOVhn6uuP6GpSqS+AAAA[0m[Pipeline] }
+[8mha:////4O6+MnzSbSfuLNyYu1JrQYdoQ9LX+UsHm2knJTyL2fDqAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIhDQ2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BOWhzlXvP5JKERi+AAAA[0m[Pipeline] // withEnv
+[8mha:////4L3OzMUgNdGmOVUCMIiBc4KvxgHMKZmLssrpFxRLr4cDAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PutINt9AF1IgLW9AAAA[0m[Pipeline] }
+[8mha:////4Fcs4IBs0EtlmtW13S9FvEDGCfSDPA0xWPd4Dj6YFDWVAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IMJC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8F+b4UZOUHTvSEFr0AAAA=[0m[Pipeline] // node
+[8mha:////4ALTWHpzl9abjrfDZrAcIGy/anPaF9I3nyd2oRdfDT9LAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PudINt+AMgYo9O9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

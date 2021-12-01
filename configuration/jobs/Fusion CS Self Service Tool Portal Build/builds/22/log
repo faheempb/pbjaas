@@ -1,0 +1,162 @@
+Started by user [8mha:////4Pzya4+tWi0lWcPV9iQUafddqpHAe2MDZJIme6yCAqptAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZx/dLi1CL9vNQKs4q0VN3UlMwS3bLM1HIAyfg55MwAAAA=[0mNEX6XFE
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4OlO8xA9YYhJx/q+JQKbKWyQaS3l4xvsxTGedQ7mH+/3AAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/eT83ILSktQi/eKcxLJU3azUvOzMvGLd0qTSvJJSQzMAaMbw0dUAAAA=[0mslave-jenkins-ubuntu16 (ubuntu16) in workspace /home/admin.eng/jaas/workspace/Fusion CS Self Service Tool Portal Build
+using credential 35b74bc0-6487-4de9-908a-9f62746bb71c
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/fusion-self-service-portal.git # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/fusion-self-service-portal.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/fusion-self-service-portal.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/refactoringEnv^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/refactoringEnv^{commit} # timeout=10
+Checking out Revision 1cf1d2199d7a0c8a27a0948bf02b7ae8756517b0 (refs/remotes/origin/refactoringEnv)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1cf1d2199d7a0c8a27a0948bf02b7ae8756517b0 # timeout=10
+Commit message: "dev config rouute53 changed"
+ > git rev-list --no-walk a6711c82f2dffa1ab3c8ab7b4a6ced4716186848 # timeout=10
+[Fusion CS Self Service Tool Portal Build] $ /bin/bash /tmp/jenkins4440146599096405040.sh
+Previous HEAD position was 1cf1d21... dev config rouute53 changed
+Switched to branch 'refactoringEnv'
+Your branch is behind 'origin/refactoringEnv' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Updating a6711c8..1cf1d21
+Fast-forward
+ .deploy-config/dev/main.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+npm/npx/node version
+6.13.1
+v13.3.0
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+/usr/local/bin/ng -> /usr/local/lib/node_modules/@angular/cli/bin/ng
+
+> @angular/cli@9.0.3 postinstall /usr/local/lib/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
++ @angular/cli@9.0.3
+updated 5 packages in 17.444s
+
+> ng-starter-app@2.0.0-beta.1 setup /home/admin.eng/jaas/workspace/Fusion CS Self Service Tool Portal Build
+> npm run setup:root && npm run setup:client && npm run setup:server
+
+
+> ng-starter-app@2.0.0-beta.1 setup:root /home/admin.eng/jaas/workspace/Fusion CS Self Service Tool Portal Build
+> npm i
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+updated 9 packages and audited 8959 packages in 11.636s
+found 0 vulnerabilities
+
+
+> ng-starter-app@2.0.0-beta.1 setup:client /home/admin.eng/jaas/workspace/Fusion CS Self Service Tool Portal Build
+> cd client && npm i
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/watchpack/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/@angular/compiler-cli/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.0.7 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.0.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 16581 packages in 19.05s
+found 15 vulnerabilities (4 moderate, 11 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+> ng-starter-app@2.0.0-beta.1 setup:server /home/admin.eng/jaas/workspace/Fusion CS Self Service Tool Portal Build
+> cd server && npm i
+
+npm WARN server@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 2656 packages in 6.563s
+found 0 vulnerabilities
+
+
+> ng-starter-app@2.0.0-beta.1 build /home/admin.eng/jaas/workspace/Fusion CS Self Service Tool Portal Build
+> npm run build:clean && npm run build:client && npm run build:server
+
+
+> ng-starter-app@2.0.0-beta.1 build:clean /home/admin.eng/jaas/workspace/Fusion CS Self Service Tool Portal Build
+> rimraf ./deploy && mkdirp ./deploy
+
+
+> ng-starter-app@2.0.0-beta.1 build:client /home/admin.eng/jaas/workspace/Fusion CS Self Service Tool Portal Build
+> cd client && node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng build --prod
+
+Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+chunk {0} runtime-es2015.d4bda8a463bfb9197a4f.js (runtime) 4.3 kB [entry] [rendered]
+chunk {1} 1-es2015.fd39d44547d20ae8c902.js () 84.5 kB  [rendered]
+chunk {2} main-es2015.c896729f87073913ebe5.js (main) 1.71 MB [initial] [rendered]
+chunk {3} polyfills-es2015.dfd71134c955ae571971.js (polyfills) 64 kB [initial] [rendered]
+chunk {4} polyfills-es5-es2015.06c9453426395ef1b915.js (polyfills-es5) 222 kB [initial] [rendered]
+chunk {5} styles.4cea7b5d1269bdb23a82.css (styles) 641 kB [initial] [rendered]
+chunk {6} 6-es2015.f4035b8ddd1c045fda2a.js () 36.7 kB  [rendered]
+chunk {7} 7-es2015.e44a878f5bf4165c4bc9.js () 41 kB  [rendered]
+chunk {8} 8-es2015.a1f95afbb05a7919f9a4.js () 93.5 kB  [rendered]
+chunk {9} 9-es2015.240846526976f75b1f6a.js () 23.9 kB  [rendered]
+chunk {scripts} scripts.736efe6525696f3f0a99.js (scripts) 146 kB [entry] [rendered]
+Date: 2020-02-27T06:57:24.370Z - Hash: 88f8c81af4860a3bed4e - Time: 57019ms
+
+WARNING in Invalid animation value at 1020:724812. Ignoring.
+
+WARNING in Invalid animation value at 1020:727030. Ignoring.
+
+WARNING in Invalid animation value at 1020:729591. Ignoring.
+
+WARNING in Invalid animation value at 1020:732170. Ignoring.
+Generating ES5 bundles for differential loading...
+ES5 bundle generation complete.
+
+> ng-starter-app@2.0.0-beta.1 build:server /home/admin.eng/jaas/workspace/Fusion CS Self Service Tool Portal Build
+> (tsc -p ./server --outDir ./deploy) | (copyfiles -u 1 './server/package.json' './deploy')
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ gulp@4.0.2
+updated 9 packages and audited 8962 packages in 13.428s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ gulp-maven-deploy@1.0.2
+updated 2 packages and audited 8962 packages in 7.317s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ gulp-zip@5.0.1
+updated 1 package and audited 8962 packages in 7.063s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[01:58:08] Using gulpfile ~/jaas/workspace/Fusion CS Self Service Tool Portal Build/gulpfile.js
+[01:58:08] Starting 'publish'...
+Executing command: mvn -B deploy:deploy-file -Dpackaging=zip -Dfile=/tmp/s-2020127-2667-1q4dwtp.whs1 -DgroupId=com.pb.platform.fusion -DartifactId=fusion-self-service-portal-ui -Dversion=1.21.22.1cf1d219 -DgeneratePom=true -DrepositoryId=PBNexusDev -Durl=http://nexus.pbi.global.pvt:8080/nexus/content/repositories/PBNexusDev
+[01:58:13] Finished 'publish' after 5.47 s
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in  1 second
+Finished: SUCCESS

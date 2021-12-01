@@ -1,0 +1,84 @@
+Started by user [8mha:////4N+jHfi7+1cFYy/GuakImwBhoEegCE8v5YarIZwgJgdjAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZZ/dLi1CL93EQDS6OkVN3ElNzMPN3UlMwS3bLM1HIAm3lrndIAAAA=[0mMA092BE
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4OlO8xA9YYhJx/q+JQKbKWyQaS3l4xvsxTGedQ7mH+/3AAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/eT83ILSktQi/eKcxLJU3azUvOzMvGLd0qTSvJJSQzMAaMbw0dUAAAA=[0mslave-jenkins-ubuntu16 (ubuntu16) in workspace /home/admin.eng/jaas/workspace/RVP-Phase-2-ECR-Deployment
+using credential 973db7c2-250c-4e23-8d01-123a90eae1d9
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/BDA-19175^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/BDA-19175^{commit} # timeout=10
+Checking out Revision 67eaf7df6afb886d0d7c9945d06c270b3fb7e02a (refs/remotes/origin/BDA-19175)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 67eaf7df6afb886d0d7c9945d06c270b3fb7e02a # timeout=10
+Commit message: "Gitlab-CI for Docker image push"
+ > git rev-list --no-walk 67eaf7df6afb886d0d7c9945d06c270b3fb7e02a # timeout=10
+[RVP-Phase-2-ECR-Deployment] $ /bin/sh -xe /tmp/jenkins2631147865571267460.sh
++ sudo apt-get install -y curl jq python python-pip
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.47.0-1ubuntu2.14).
+python is already the newest version (2.7.12-1~16.04).
+jq is already the newest version (1.5+dfsg-1ubuntu0.1).
+python-pip is already the newest version (8.1.1-2ubuntu0.4).
+The following packages were automatically installed and are no longer required:
+  gyp javascript-common libjs-inherits libjs-jquery libjs-node-uuid
+  libjs-underscore libssl-dev libssl-doc libuv1 libuv1-dev
+  linux-headers-4.4.0-142 linux-headers-4.4.0-142-generic
+  linux-image-4.4.0-142-generic linux-image-extra-4.4.0-142-generic
+  node-abbrev node-ansi node-ansi-color-table node-archy node-async
+  node-block-stream node-combined-stream node-cookie-jar node-delayed-stream
+  node-forever-agent node-form-data node-fstream node-fstream-ignore
+  node-github-url-from-git node-glob node-graceful-fs node-gyp node-inherits
+  node-ini node-json-stringify-safe node-lockfile node-lru-cache node-mime
+  node-minimatch node-mkdirp node-mute-stream node-node-uuid node-nopt
+  node-normalize-package-data node-npmlog node-once node-osenv node-qs
+  node-read node-read-package-json node-request node-retry node-rimraf
+  node-semver node-sha node-sigmund node-slide node-tar node-tunnel-agent
+  node-underscore node-which zlib1g-dev
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 91 not upgraded.
++ pip install awscli
+Collecting awscli
+  Using cached https://files.pythonhosted.org/packages/d4/c3/88c32b3edb7e8cbd8a5ac2cbd9708ff0a2e9f0e9caf094fd6029831696c9/awscli-1.18.54-py2.py3-none-any.whl
+Collecting rsa<=3.5.0,>=3.1.2 (from awscli)
+  Using cached https://files.pythonhosted.org/packages/e1/ae/baedc9cb175552e95f3395c43055a6a5e125ae4d48a1d7a924baca83e92e/rsa-3.4.2-py2.py3-none-any.whl
+Collecting s3transfer<0.4.0,>=0.3.0 (from awscli)
+  Using cached https://files.pythonhosted.org/packages/69/79/e6afb3d8b0b4e96cefbdc690f741d7dd24547ff1f94240c997a26fa908d3/s3transfer-0.3.3-py2.py3-none-any.whl
+Collecting docutils<0.16,>=0.10 (from awscli)
+  Using cached https://files.pythonhosted.org/packages/3a/dc/bf2b15d1fa15a6f7a9e77a61b74ecbbae7258558fcda8ffc9a6638a6b327/docutils-0.15.2-py2-none-any.whl
+Collecting PyYAML<5.4,>=3.10; python_version != "3.4" (from awscli)
+Collecting botocore==1.16.4 (from awscli)
+  Using cached https://files.pythonhosted.org/packages/4a/b3/1756f8d43af677110c91f5450c4f8c1d30d64e39a435ce01ebd4ceb88843/botocore-1.16.4-py2.py3-none-any.whl
+Collecting colorama<0.4.4,>=0.2.5; python_version != "3.4" (from awscli)
+  Using cached https://files.pythonhosted.org/packages/c9/dc/45cdef1b4d119eb96316b3117e6d5708a08029992b2fee2c143c7a0a5cc5/colorama-0.4.3-py2.py3-none-any.whl
+Collecting pyasn1>=0.1.3 (from rsa<=3.5.0,>=3.1.2->awscli)
+  Using cached https://files.pythonhosted.org/packages/62/1e/a94a8d635fa3ce4cfc7f506003548d0a2447ae76fd5ca53932970fe3053f/pyasn1-0.4.8-py2.py3-none-any.whl
+Collecting futures<4.0.0,>=2.2.0; python_version == "2.7" (from s3transfer<0.4.0,>=0.3.0->awscli)
+  Using cached https://files.pythonhosted.org/packages/d8/a6/f46ae3f1da0cd4361c344888f59ec2f5785e69c872e175a748ef6071cdb5/futures-3.3.0-py2-none-any.whl
+Collecting urllib3<1.26,>=1.20; python_version != "3.4" (from botocore==1.16.4->awscli)
+  Using cached https://files.pythonhosted.org/packages/e1/e5/df302e8017440f111c11cc41a6b432838672f5a70aa29227bf58149dc72f/urllib3-1.25.9-py2.py3-none-any.whl
+Collecting jmespath<1.0.0,>=0.7.1 (from botocore==1.16.4->awscli)
+  Using cached https://files.pythonhosted.org/packages/a3/43/1e939e1fcd87b827fe192d0c9fc25b48c5b3368902bfb913de7754b0dc03/jmespath-0.9.5-py2.py3-none-any.whl
+Collecting python-dateutil<3.0.0,>=2.1 (from botocore==1.16.4->awscli)
+  Using cached https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl
+Collecting six>=1.5 (from python-dateutil<3.0.0,>=2.1->botocore==1.16.4->awscli)
+  Using cached https://files.pythonhosted.org/packages/65/eb/1f97cb97bfc2390a276969c6fae16075da282f5058082d4cb10c6c5c1dba/six-1.14.0-py2.py3-none-any.whl
+Installing collected packages: pyasn1, rsa, futures, urllib3, docutils, jmespath, six, python-dateutil, botocore, s3transfer, PyYAML, colorama, awscli
+Successfully installed PyYAML-5.3.1 awscli-1.18.54 botocore-1.16.4 colorama-0.4.3 docutils-0.15.2 futures-3.3.0 jmespath-0.9.5 pyasn1-0.4.8 python-dateutil-2.8.1 rsa-3.4.2 s3transfer-0.3.3 six-1.14.0 urllib3-1.25.9
+You are using pip version 8.1.1, however version 20.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
++ export PATH=~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
++ aws ecr get-login
+/tmp/jenkins2631147865571267460.sh: 5: /tmp/jenkins2631147865571267460.sh: aws: not found
+Build step 'Execute shell' marked build as failure
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

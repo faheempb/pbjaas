@@ -1,0 +1,207 @@
+Started by user [8mha:////4N+jHfi7+1cFYy/GuakImwBhoEegCE8v5YarIZwgJgdjAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZZ/dLi1CL93EQDS6OkVN3ElNzMPN3UlMwS3bLM1HIAm3lrndIAAAA=[0mMA092BE
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4OlO8xA9YYhJx/q+JQKbKWyQaS3l4xvsxTGedQ7mH+/3AAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/eT83ILSktQi/eKcxLJU3azUvOzMvGLd0qTSvJJSQzMAaMbw0dUAAAA=[0mslave-jenkins-ubuntu16 (ubuntu16) in workspace /home/admin.eng/jaas/workspace/RVP-Phase-2-ECR-Deployment
+using credential 973db7c2-250c-4e23-8d01-123a90eae1d9
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git # timeout=10
+Fetching upstream changes from http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://dbygitmsprod.pbi.global.pvt/big-data/return-volume-predictions.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/BDA-19175^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/BDA-19175^{commit} # timeout=10
+Checking out Revision 67eaf7df6afb886d0d7c9945d06c270b3fb7e02a (refs/remotes/origin/BDA-19175)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 67eaf7df6afb886d0d7c9945d06c270b3fb7e02a # timeout=10
+Commit message: "Gitlab-CI for Docker image push"
+ > git rev-list --no-walk 67eaf7df6afb886d0d7c9945d06c270b3fb7e02a # timeout=10
+[RVP-Phase-2-ECR-Deployment] $ /bin/sh -xe /tmp/jenkins7971478956849853765.sh
++ sudo apt-get install -y curl jq python python-pip
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.47.0-1ubuntu2.14).
+python is already the newest version (2.7.12-1~16.04).
+python set to manually installed.
+The following packages were automatically installed and are no longer required:
+  gyp javascript-common libjs-inherits libjs-jquery libjs-node-uuid
+  libjs-underscore libssl-dev libssl-doc libuv1 libuv1-dev
+  linux-headers-4.4.0-142 linux-headers-4.4.0-142-generic
+  linux-image-4.4.0-142-generic linux-image-extra-4.4.0-142-generic
+  node-abbrev node-ansi node-ansi-color-table node-archy node-async
+  node-block-stream node-combined-stream node-cookie-jar node-delayed-stream
+  node-forever-agent node-form-data node-fstream node-fstream-ignore
+  node-github-url-from-git node-glob node-graceful-fs node-gyp node-inherits
+  node-ini node-json-stringify-safe node-lockfile node-lru-cache node-mime
+  node-minimatch node-mkdirp node-mute-stream node-node-uuid node-nopt
+  node-normalize-package-data node-npmlog node-once node-osenv node-qs
+  node-read node-read-package-json node-request node-retry node-rimraf
+  node-semver node-sha node-sigmund node-slide node-tar node-tunnel-agent
+  node-underscore node-which zlib1g-dev
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libexpat1-dev libonig2 libpython-all-dev libpython-dev libpython2.7
+  libpython2.7-dev libpython2.7-minimal libpython2.7-stdlib python-all
+  python-all-dev python-dev python-pip-whl python-setuptools python-wheel
+  python2.7 python2.7-dev python2.7-minimal
+Suggested packages:
+  python-setuptools-doc python2.7-doc binfmt-support
+The following NEW packages will be installed:
+  jq libexpat1-dev libonig2 libpython-all-dev libpython-dev libpython2.7
+  libpython2.7-dev python-all python-all-dev python-dev python-pip
+  python-pip-whl python-setuptools python-wheel python2.7-dev
+The following packages will be upgraded:
+  libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-minimal
+4 upgraded, 15 newly installed, 0 to remove and 91 not upgraded.
+Need to get 34.7 MB of archives.
+After this operation, 49.1 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7 amd64 2.7.12-1ubuntu0~16.04.11 [224 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-stdlib amd64 2.7.12-1ubuntu0~16.04.11 [1,884 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7-minimal amd64 2.7.12-1ubuntu0~16.04.11 [1,261 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-minimal amd64 2.7.12-1ubuntu0~16.04.11 [338 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libonig2 amd64 5.9.6-1ubuntu0.1 [86.7 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 jq amd64 1.5+dfsg-1ubuntu0.1 [144 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libexpat1-dev amd64 2.1.0-7ubuntu0.16.04.5 [115 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7 amd64 2.7.12-1ubuntu0~16.04.11 [1,070 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.11 [27.8 MB]
+Get:10 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython-dev amd64 2.7.12-1~16.04 [7,840 B]
+Get:11 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython-all-dev amd64 2.7.12-1~16.04 [1,006 B]
+Get:12 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-all amd64 2.7.12-1~16.04 [996 B]
+Get:13 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7-dev amd64 2.7.12-1ubuntu0~16.04.11 [276 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-dev amd64 2.7.12-1~16.04 [1,186 B]
+Get:15 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-all-dev amd64 2.7.12-1~16.04 [1,016 B]
+Get:16 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 python-pip-whl all 8.1.1-2ubuntu0.4 [1,110 kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 python-pip all 8.1.1-2ubuntu0.4 [144 kB]
+Get:18 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-setuptools all 20.7.0-1 [169 kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 python-wheel all 0.29.0-1 [48.0 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 34.7 MB in 9s (3,808 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 145062 files and directories currently installed.)
+Preparing to unpack .../python2.7_2.7.12-1ubuntu0~16.04.11_amd64.deb ...
+Unpacking python2.7 (2.7.12-1ubuntu0~16.04.11) over (2.7.12-1ubuntu0~16.04.9) ...
+Preparing to unpack .../libpython2.7-stdlib_2.7.12-1ubuntu0~16.04.11_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.11) over (2.7.12-1ubuntu0~16.04.9) ...
+Preparing to unpack .../python2.7-minimal_2.7.12-1ubuntu0~16.04.11_amd64.deb ...
+Unpacking python2.7-minimal (2.7.12-1ubuntu0~16.04.11) over (2.7.12-1ubuntu0~16.04.9) ...
+Preparing to unpack .../libpython2.7-minimal_2.7.12-1ubuntu0~16.04.11_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.11) over (2.7.12-1ubuntu0~16.04.9) ...
+Selecting previously unselected package libonig2:amd64.
+Preparing to unpack .../libonig2_5.9.6-1ubuntu0.1_amd64.deb ...
+Unpacking libonig2:amd64 (5.9.6-1ubuntu0.1) ...
+Selecting previously unselected package jq.
+Preparing to unpack .../jq_1.5+dfsg-1ubuntu0.1_amd64.deb ...
+Unpacking jq (1.5+dfsg-1ubuntu0.1) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../libexpat1-dev_2.1.0-7ubuntu0.16.04.5_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.1.0-7ubuntu0.16.04.5) ...
+Selecting previously unselected package libpython2.7:amd64.
+Preparing to unpack .../libpython2.7_2.7.12-1ubuntu0~16.04.11_amd64.deb ...
+Unpacking libpython2.7:amd64 (2.7.12-1ubuntu0~16.04.11) ...
+Selecting previously unselected package libpython2.7-dev:amd64.
+Preparing to unpack .../libpython2.7-dev_2.7.12-1ubuntu0~16.04.11_amd64.deb ...
+Unpacking libpython2.7-dev:amd64 (2.7.12-1ubuntu0~16.04.11) ...
+Selecting previously unselected package libpython-dev:amd64.
+Preparing to unpack .../libpython-dev_2.7.12-1~16.04_amd64.deb ...
+Unpacking libpython-dev:amd64 (2.7.12-1~16.04) ...
+Selecting previously unselected package libpython-all-dev:amd64.
+Preparing to unpack .../libpython-all-dev_2.7.12-1~16.04_amd64.deb ...
+Unpacking libpython-all-dev:amd64 (2.7.12-1~16.04) ...
+Selecting previously unselected package python-all.
+Preparing to unpack .../python-all_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-all (2.7.12-1~16.04) ...
+Selecting previously unselected package python2.7-dev.
+Preparing to unpack .../python2.7-dev_2.7.12-1ubuntu0~16.04.11_amd64.deb ...
+Unpacking python2.7-dev (2.7.12-1ubuntu0~16.04.11) ...
+Selecting previously unselected package python-dev.
+Preparing to unpack .../python-dev_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-dev (2.7.12-1~16.04) ...
+Selecting previously unselected package python-all-dev.
+Preparing to unpack .../python-all-dev_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-all-dev (2.7.12-1~16.04) ...
+Selecting previously unselected package python-pip-whl.
+Preparing to unpack .../python-pip-whl_8.1.1-2ubuntu0.4_all.deb ...
+Unpacking python-pip-whl (8.1.1-2ubuntu0.4) ...
+Selecting previously unselected package python-pip.
+Preparing to unpack .../python-pip_8.1.1-2ubuntu0.4_all.deb ...
+Unpacking python-pip (8.1.1-2ubuntu0.4) ...
+Selecting previously unselected package python-setuptools.
+Preparing to unpack .../python-setuptools_20.7.0-1_all.deb ...
+Unpacking python-setuptools (20.7.0-1) ...
+Selecting previously unselected package python-wheel.
+Preparing to unpack .../python-wheel_0.29.0-1_all.deb ...
+Unpacking python-wheel (0.29.0-1) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.11) ...
+Setting up python2.7-minimal (2.7.12-1ubuntu0~16.04.11) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.11) ...
+Setting up python2.7 (2.7.12-1ubuntu0~16.04.11) ...
+Setting up libonig2:amd64 (5.9.6-1ubuntu0.1) ...
+Setting up jq (1.5+dfsg-1ubuntu0.1) ...
+Setting up libexpat1-dev:amd64 (2.1.0-7ubuntu0.16.04.5) ...
+Setting up libpython2.7:amd64 (2.7.12-1ubuntu0~16.04.11) ...
+Setting up libpython2.7-dev:amd64 (2.7.12-1ubuntu0~16.04.11) ...
+Setting up libpython-dev:amd64 (2.7.12-1~16.04) ...
+Setting up libpython-all-dev:amd64 (2.7.12-1~16.04) ...
+Setting up python-all (2.7.12-1~16.04) ...
+Setting up python2.7-dev (2.7.12-1ubuntu0~16.04.11) ...
+Setting up python-dev (2.7.12-1~16.04) ...
+Setting up python-all-dev (2.7.12-1~16.04) ...
+Setting up python-pip-whl (8.1.1-2ubuntu0.4) ...
+Setting up python-pip (8.1.1-2ubuntu0.4) ...
+Setting up python-setuptools (20.7.0-1) ...
+Setting up python-wheel (0.29.0-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
++ pip install awscli
+Collecting awscli
+  Downloading https://files.pythonhosted.org/packages/d4/c3/88c32b3edb7e8cbd8a5ac2cbd9708ff0a2e9f0e9caf094fd6029831696c9/awscli-1.18.54-py2.py3-none-any.whl (3.0MB)
+Collecting rsa<=3.5.0,>=3.1.2 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/e1/ae/baedc9cb175552e95f3395c43055a6a5e125ae4d48a1d7a924baca83e92e/rsa-3.4.2-py2.py3-none-any.whl (46kB)
+Collecting s3transfer<0.4.0,>=0.3.0 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/69/79/e6afb3d8b0b4e96cefbdc690f741d7dd24547ff1f94240c997a26fa908d3/s3transfer-0.3.3-py2.py3-none-any.whl (69kB)
+Collecting docutils<0.16,>=0.10 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/3a/dc/bf2b15d1fa15a6f7a9e77a61b74ecbbae7258558fcda8ffc9a6638a6b327/docutils-0.15.2-py2-none-any.whl (548kB)
+Collecting PyYAML<5.4,>=3.10; python_version != "3.4" (from awscli)
+  Downloading https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz (269kB)
+Collecting botocore==1.16.4 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/4a/b3/1756f8d43af677110c91f5450c4f8c1d30d64e39a435ce01ebd4ceb88843/botocore-1.16.4-py2.py3-none-any.whl (6.2MB)
+Collecting colorama<0.4.4,>=0.2.5; python_version != "3.4" (from awscli)
+  Downloading https://files.pythonhosted.org/packages/c9/dc/45cdef1b4d119eb96316b3117e6d5708a08029992b2fee2c143c7a0a5cc5/colorama-0.4.3-py2.py3-none-any.whl
+Collecting pyasn1>=0.1.3 (from rsa<=3.5.0,>=3.1.2->awscli)
+  Downloading https://files.pythonhosted.org/packages/62/1e/a94a8d635fa3ce4cfc7f506003548d0a2447ae76fd5ca53932970fe3053f/pyasn1-0.4.8-py2.py3-none-any.whl (77kB)
+Collecting futures<4.0.0,>=2.2.0; python_version == "2.7" (from s3transfer<0.4.0,>=0.3.0->awscli)
+  Downloading https://files.pythonhosted.org/packages/d8/a6/f46ae3f1da0cd4361c344888f59ec2f5785e69c872e175a748ef6071cdb5/futures-3.3.0-py2-none-any.whl
+Collecting urllib3<1.26,>=1.20; python_version != "3.4" (from botocore==1.16.4->awscli)
+  Downloading https://files.pythonhosted.org/packages/e1/e5/df302e8017440f111c11cc41a6b432838672f5a70aa29227bf58149dc72f/urllib3-1.25.9-py2.py3-none-any.whl (126kB)
+Collecting jmespath<1.0.0,>=0.7.1 (from botocore==1.16.4->awscli)
+  Downloading https://files.pythonhosted.org/packages/a3/43/1e939e1fcd87b827fe192d0c9fc25b48c5b3368902bfb913de7754b0dc03/jmespath-0.9.5-py2.py3-none-any.whl
+Collecting python-dateutil<3.0.0,>=2.1 (from botocore==1.16.4->awscli)
+  Downloading https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl (227kB)
+Collecting six>=1.5 (from python-dateutil<3.0.0,>=2.1->botocore==1.16.4->awscli)
+  Downloading https://files.pythonhosted.org/packages/65/eb/1f97cb97bfc2390a276969c6fae16075da282f5058082d4cb10c6c5c1dba/six-1.14.0-py2.py3-none-any.whl
+Building wheels for collected packages: PyYAML
+  Running setup.py bdist_wheel for PyYAML: started
+  Running setup.py bdist_wheel for PyYAML: finished with status 'done'
+  Stored in directory: /home/admin.eng/.cache/pip/wheels/a7/c1/ea/cf5bd31012e735dc1dfea3131a2d5eae7978b251083d6247bd
+Successfully built PyYAML
+Installing collected packages: pyasn1, rsa, futures, urllib3, docutils, jmespath, six, python-dateutil, botocore, s3transfer, PyYAML, colorama, awscli
+Successfully installed PyYAML awscli botocore colorama docutils futures jmespath pyasn1 python-dateutil rsa s3transfer six urllib3
+You are using pip version 8.1.1, however version 20.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
++ aws ecr get-login
+/tmp/jenkins7971478956849853765.sh: 4: /tmp/jenkins7971478956849853765.sh: aws: not found
+Build step 'Execute shell' marked build as failure
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

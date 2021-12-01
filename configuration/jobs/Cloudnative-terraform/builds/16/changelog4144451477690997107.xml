@@ -1,0 +1,10 @@
+commit 6a07e26617a04d1e87c5870197bf36fd020bbcb8
+tree 1f93c488da1fc2a97d5a2f8b9bd086b9a5bed4c6
+parent 07b9ffb45022d3473746ccd2271aec450225ac4b
+author PBI\NEX3DJO <karan.sharma1@pb.com> 2019-11-26 17:57:12 +0530
+committer PBI\NEX3DJO <karan.sharma1@pb.com> 2019-11-26 17:57:12 +0530
+
+    updated jenkins bash script
+
+
+:100644 100644 2e33b955efd23cd67bb06d49a5e66cd150f58f44 e2f35ce77fdbf3912d3764e69087067d3d4da891 M	Jenkinsfile

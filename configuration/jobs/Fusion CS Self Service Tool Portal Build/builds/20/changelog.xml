@@ -1,0 +1,9 @@
+commit 2818e35a2746ee85d6ef25a470dac9f396435142
+tree 7f529f4887b0daa3d4a42b688f39d20b6b322286
+parent 348ce8904767b8822a45d418d034ffcc73e0cfcc
+author Manasi Belhe <manasi.belhe@pb.com> 2020-01-29 02:31:18 -0500
+committer Manasi Belhe <manasi.belhe@pb.com> 2020-01-29 02:31:18 -0500
+
+    Update nodemon.json - Adding https in the url
+
+:100644 100644 f1fa1bf6cd8bf86cf3cc22d4e91a88759ab47434 bba3cccaaac4c13f41df665282616a2912d6a311 M	server/nodemon.json

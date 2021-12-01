@@ -1,0 +1,26 @@
+commit b3aed49e1fe06827708b35bf15ef4664528a3a0c
+tree b60372349546fd8f5465bef9484665bb9bcad9b1
+parent 9e4dc8751ae9205338f8fdb76edaa90a10cb4aec
+author Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-16 00:13:14 +0530
+committer Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-16 00:13:14 +0530
+
+    tooltips css bugfixed
+
+
+:100755 100755 c0afbdeb9acbdb22cadf56741f678bf0a5721182 0deca3f6225742ea069ef9ced874f78825454870 M	client/src/app/app.module.ts
+:100644 100644 bbee7d85a44627b26d6c9b762f9f4d3e8d58cd26 02ce1484884a3f8b3c27a1349d7b3b47511e5318 M	client/src/app/reports/delivery-performance/delivery-performance.component.html
+:100644 100644 4d99ef9391da0f994d729da9dc3bd66d37736928 04c7111d70bb4ced9a8dca78029b0324e4b45185 M	client/src/app/reports/delivery-performance/delivery-performance.component.ts
+:100644 100644 cdd536304c8661d58df9f0000540263b2605f2a7 6d040426b36dbb5ee0184ffef7075bb513580155 M	client/src/app/reports/reports.module.ts
+:100755 100755 245f0c7a31b0667a5faeb791c9a45216fad57824 2bcc07e731f8b263e9bc7507076c5355da117739 M	client/src/app/shared/shared.module.ts
+commit 9e4dc8751ae9205338f8fdb76edaa90a10cb4aec
+tree f76043f854ee728471d7ec46ac4f1f67382f62d5
+parent d1a84368007cca181863693499a485725003c7d4
+author Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-15 17:28:07 +0530
+committer Harvendra Singh <HARVENDRA.SINGH@pb.com> 2020-01-15 17:28:07 +0530
+
+    ui bugfixed and added tooltips for table header
+
+
+:100644 100644 e9934d587649a7755bc2a4d60189b33830e2a8d9 bbee7d85a44627b26d6c9b762f9f4d3e8d58cd26 M	client/src/app/reports/delivery-performance/delivery-performance.component.html
+:100644 100644 7d0ea9fd553af45561d48e828acb2523b2e416db 4d99ef9391da0f994d729da9dc3bd66d37736928 M	client/src/app/reports/delivery-performance/delivery-performance.component.ts
+:100644 100644 1edbcbc5a9657fc28c177d8ef4281ff9025ebfd1 cd2ecf5efb2fd7b9e4e815ef2dca78b0704aa542 M	client/src/app/reports/report-request/report-request.component.html

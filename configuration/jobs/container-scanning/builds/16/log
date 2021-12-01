@@ -1,0 +1,36 @@
+Started by user [8mha:////4G6htlBDIQ5eNSXQgAbjJSsdFgaRPMuAnEu2b1US4qoSAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZZ/dLi1CL9vNQK45SsfN3ElNzMPN3UlMwS3bLM1HIAe5rC19IAAAA=[0mNEX3DJO
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4OlO8xA9YYhJx/q+JQKbKWyQaS3l4xvsxTGedQ7mH+/3AAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/eT83ILSktQi/eKcxLJU3azUvOzMvGLd0qTSvJJSQzMAaMbw0dUAAAA=[0mslave-jenkins-ubuntu16 (ubuntu16) in workspace /home/admin.eng/jaas/workspace/container-scanning
+[container-scanning] $ /bin/sh -xe /tmp/jenkins1921266070247198759.sh
++ echo nexus.pitneycloud.com:8443/fusion-platform/awscli-docker:latest
+2020-06-16T05:29:41.345 INFO   AnchoreWorker   Jenkins version: 2.176.3
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   Anchore Container Image Scanner Plugin version: 1.0.22
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [global] debug: false
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [build] engineurl: https://anchore-qa.psec.pitneycloud.com:8228/v1
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [build] engineuser: nexusdeploy-s
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [build] enginepass: ****
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [build] engineverify: false
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [build] name: anchore_images
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [build] engineRetries: 300
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [build] policyBundleId: 
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [build] bailOnFail: true
+2020-06-16T05:29:41.346 INFO   AnchoreWorker   [build] bailOnPluginFail: true
+2020-06-16T05:29:41.355 INFO   AnchorePlugin   Build override set for Anchore Engine URL
+2020-06-16T05:29:41.355 INFO   AnchorePlugin   Build override set for Anchore Engine credentials
+2020-06-16T05:29:41.355 INFO   AnchorePlugin   Build override set for Anchore Engine verify SSL
+2020-06-16T05:29:41.355 INFO   AnchoreWorker   Submitting nexus.pitneycloud.com:8443/fusion-platform/awscli-docker:latest for analysis
+2020-06-16T05:29:42.938 INFO   AnchoreWorker   Analysis request accepted, received image digest sha256:ecb95c0d4589a8a1336066bfd02f981afc1b60fc12874fb0410b9444d7faf362
+2020-06-16T05:29:42.939 INFO   AnchoreWorker   Waiting for analysis of nexus.pitneycloud.com:8443/fusion-platform/awscli-docker:latest, polling status periodically
+2020-06-16T05:31:32.754 INFO   AnchoreWorker   Completed analysis and processed policy evaluation result
+2020-06-16T05:31:32.781 INFO   AnchoreWorker   Policy evaluation summary for nexus.pitneycloud.com:8443/fusion-platform/awscli-docker:latest - stop: 0 (+0 whitelisted), warn: 58 (+0 whitelisted), go: 0 (+0 whitelisted), final: warn
+2020-06-16T05:31:32.783 INFO   AnchoreWorker   Anchore Container Image Scanner Plugin step result - PASS
+2020-06-16T05:31:32.783 INFO   AnchoreWorker   Querying vulnerability listing for nexus.pitneycloud.com:8443/fusion-platform/awscli-docker:latest
+Archiving artifacts
+2020-06-16T05:31:35.088 INFO   AnchorePlugin   Marking Anchore Container Image Scanner step as successful, final result PASS
+2020-06-16T05:31:35.091 INFO   AnchorePlugin   Completed Anchore Container Image Scanner step
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS
