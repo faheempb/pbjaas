@@ -1,0 +1,22 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>slave-jenkins-ubuntu16</name>
+  <description>slave node</description>
+  <remoteFS>/home/admin.eng/jaas</remoteFS>
+  <numExecutors>5</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.30.2">
+    <host>10.50.8.234</host>
+    <port>22</port>
+    <credentialsId>66f55dfd-64ef-46bb-8b8f-017e1eafea25</credentialsId>
+    <launchTimeoutSeconds>210</launchTimeoutSeconds>
+    <maxNumRetries>10</maxNumRetries>
+    <retryWaitTime>15</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy"/>
+    <tcpNoDelay>true</tcpNoDelay>
+  </launcher>
+  <label>ubuntu16</label>
+  <nodeProperties/>
+</slave>
+
